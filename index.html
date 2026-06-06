@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aire Proyectos Panamá | 13 años en climatización, VRF, piscinas y mantenimiento HVAC</title>
-  <meta name="description" content="Aire Proyectos Panamá diseña, instala, mantiene y repara sistemas HVAC, VRF, recuperación de calor para piscinas, ductería, SmartMist, control de olores industriales, filtros y desinfección de ductos." />
-  <meta name="keywords" content="Aire Proyectos Panamá, climatización Panamá, HVAC Panamá, sistemas VRF Panamá, aire acondicionado comercial, aire acondicionado residencial, recuperación de calor piscina, calefacción de piscinas Panamá, heat pump piscina, ductería metálica, duct board P3, Durkeesox Panamá, SmartMist Panamá, mantenimiento HVAC Panamá, reparación aire acondicionado Panamá, limpieza de ductos Panamá, control de olores industriales Panamá, auditoría energética Panamá" />
+ 
+  <!-- ============================================================
+       SEO  (Brief 1.1 / 1.2 → sin "finca", sin "agropecuaria", sin "mosquitos")
+       ============================================================ -->
+  <title>Aire Proyectos Panamá | Ingeniería HVAC, VRF, Recuperación de Calor y Mantenimiento</title>
+  <meta name="description" content="13 años diseñando, instalando y manteniendo sistemas de climatización en Panamá: VRF, chillers, ductería, recuperación de calor para piscinas, SmartMist, Durkeesox, control de olores industriales y contratos de mantenimiento HVAC." />
+  <meta name="keywords" content="aire acondicionado Panamá, sistemas VRF Panamá, climatización comercial Panamá, ingeniería HVAC Panamá, recuperación de calor piscinas Panamá, calentamiento de piscina Panamá, ductería Durkeesox Panamá, SmartMist Panamá, control de olores industriales Panamá, mantenimiento HVAC Panamá, chillers Panamá, limpieza y desinfección de ductos Panamá, heat pump piscina Panamá" />
   <meta name="author" content="Aire Proyectos Panamá" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://aireproyectospanama.com/" />
-  <meta property="og:title" content="Aire Proyectos Panamá | 13 años diseñando sistemas de climatización" />
-  <meta property="og:description" content="Proyectos HVAC a medida, VRF, recuperación de calor, mantenimiento, ductería y soluciones de aire para Panamá." />
+ 
+  <meta property="og:title" content="Aire Proyectos Panamá | Ingeniería y Climatización HVAC — 13 años" />
+  <meta property="og:description" content="Diseño, instalación, mantenimiento y reparación de sistemas de climatización para proyectos comerciales, industriales y residenciales de alto nivel en Panamá." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://aireproyectospanama.com/" />
   <meta name="twitter:card" content="summary_large_image" />
-
+ 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,714 +27,1132 @@
         extend: {
           colors: {
             brand: {
-              ink: '#0B1F33',
-              navy: '#102A43',
-              blue: '#1597B8',
-              cyan: '#37C6D9',
-              teal: '#18A999',
-              orange: '#F97316',
-              gold: '#F7C948',
-              soft: '#EEF7FA'
+              deep: '#0B1120',
+              navy: '#0F172A',
+              slate: '#1E293B',
+              cool: '#39BBD1',
+              coolDark: '#0EA5E9',
+              warm: '#F97316',
+              warmDark: '#EA580C',
+              teal: '#14B8A6',
+              accent: '#FACC15'
             }
           },
           fontFamily: {
-            sans: ['Inter', 'system-ui', 'Segoe UI', 'sans-serif']
+            display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+            sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace']
           },
           boxShadow: {
-            soft: '0 24px 80px rgba(11, 31, 51, 0.14)',
-            card: '0 16px 42px rgba(11, 31, 51, 0.10)'
+            soft: '0 28px 80px rgba(8, 15, 30, 0.16)',
+            card: '0 18px 45px rgba(8, 15, 30, 0.10)',
+            glow: '0 0 0 1px rgba(57,187,209,.25), 0 24px 60px rgba(14,165,233,.25)'
           }
         }
       }
     }
   </script>
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
   <style>
-    :root { color-scheme: light; }
-    body { background: #F8FAFC; }
-    .hero-grid {
+    :root{
+      --grid: rgba(148,163,184,.10);
+    }
+    body{ font-family:'Hanken Grotesk',system-ui,sans-serif; }
+    .font-display{ font-family:'Bricolage Grotesque',system-ui,sans-serif; }
+    .font-mono{ font-family:'JetBrains Mono',ui-monospace,monospace; }
+ 
+    /* ---------- Textura tipo plano de ingeniería ---------- */
+    .blueprint{
       background-image:
-        radial-gradient(circle at 20% 10%, rgba(55, 198, 217, 0.22), transparent 28rem),
-        radial-gradient(circle at 90% 20%, rgba(249, 115, 22, 0.14), transparent 24rem),
-        linear-gradient(to right, rgba(16,42,67,0.06) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(16,42,67,0.06) 1px, transparent 1px);
-      background-size: auto, auto, 64px 64px, 64px 64px;
+        radial-gradient(circle at 18% 12%, rgba(57,187,209,.20), transparent 30rem),
+        radial-gradient(circle at 88% 6%, rgba(249,115,22,.14), transparent 26rem),
+        linear-gradient(to right, var(--grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+      background-size: auto, auto, 46px 46px, 46px 46px;
     }
-    .gradient-text {
-      background: linear-gradient(135deg, #1597B8 0%, #18A999 52%, #F97316 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .grid-soft{
+      background-image:
+        linear-gradient(to right, rgba(15,23,42,.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15,23,42,.05) 1px, transparent 1px);
+      background-size: 46px 46px;
     }
-    .replace-logo,
-    .replace-photo,
-    .replace-video {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      border: 2px dashed rgba(21, 151, 184, 0.48);
+    .gradient-text{
+      background:linear-gradient(120deg,#39BBD1 0%,#14B8A6 45%,#F97316 100%);
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    }
+ 
+    /* ---------- Placeholders fáciles de reemplazar ----------
+       Para reemplazar: cambia el <div class="ph"> por <img src="tu-foto.jpg" ...>
+       o coloca la imagen como background. El texto y el ícono son solo guía. */
+    .ph{
+      position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:.4rem;text-align:center;padding:1.25rem;border-radius:1rem;overflow:hidden;
       background:
-        linear-gradient(135deg, rgba(21,151,184,0.08), rgba(249,115,22,0.08)),
-        repeating-linear-gradient(45deg, rgba(15,23,42,0.035), rgba(15,23,42,0.035) 12px, transparent 12px, transparent 24px);
-      color: #102A43;
-      text-align: center;
+        repeating-linear-gradient(45deg, rgba(148,163,184,.14), rgba(148,163,184,.14) 12px, rgba(226,232,240,.55) 12px, rgba(226,232,240,.55) 24px);
+      border:2px dashed #94a3b8;color:#475569;
     }
-    .replace-logo::after,
-    .replace-photo::after,
-    .replace-video::after {
-      content: attr(data-replace);
-      position: absolute;
-      left: 0.75rem;
-      bottom: 0.65rem;
-      right: 0.75rem;
-      font-size: 0.72rem;
-      line-height: 1.25;
-      color: rgba(16,42,67,0.72);
+    .ph::before{content:"📷";font-size:1.5rem;opacity:.7}
+    .ph small{font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;color:#64748b}
+    .ph b{font-weight:700;font-size:.9rem;color:#334155;line-height:1.2}
+    .ph.dark{ background:
+        repeating-linear-gradient(45deg, rgba(255,255,255,.06), rgba(255,255,255,.06) 12px, rgba(255,255,255,.02) 12px, rgba(255,255,255,.02) 24px);
+        border-color:rgba(148,163,184,.45);color:#cbd5e1; }
+    .ph.dark b{color:#e2e8f0}.ph.dark small{color:#94a3b8}
+    .logo-ph{
+      display:flex;align-items:center;justify-content:center;border:2px dashed #cbd5e1;border-radius:.85rem;
+      background:#fff;color:#94a3b8;font-family:'JetBrains Mono',monospace;font-size:.62rem;letter-spacing:.08em;
+      text-transform:uppercase;text-align:center;padding:.5rem;line-height:1.15;
     }
-    .replace-logo { min-height: 4.75rem; min-width: 11rem; border-radius: 1rem; background-color: #fff; }
-    .replace-photo { min-height: 14rem; border-radius: 1.5rem; }
-    .replace-video { min-height: 20rem; border-radius: 1.5rem; }
-    .placeholder-title { font-weight: 800; font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; }
-    .pill { border: 1px solid rgba(21, 151, 184, 0.22); background: rgba(255,255,255,0.72); }
-    .section-kicker { letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.78rem; font-weight: 800; color: #1597B8; }
-    .table-card td, .table-card th { vertical-align: top; }
-    .nav-link { color: #334155; font-weight: 700; font-size: 0.92rem; }
-    .nav-link:hover { color: #1597B8; }
-    .mobile-panel { display: none; }
-    .mobile-panel.open { display: block; }
-    .before-after input[type='range'] { accent-color: #1597B8; }
-    .faq-item[open] summary { color: #1597B8; }
-    @media (max-width: 768px) { .desktop-nav { display: none; } }
-    @media (min-width: 769px) { .mobile-menu-button { display: none; } }
+ 
+    /* ---------- Etiqueta de sección (numerada, estilo doc de ingeniería) ---------- */
+    .eyebrow{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;}
+ 
+    /* ---------- Reveal on scroll ---------- */
+    .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+    .reveal.in{opacity:1;transform:none}
+ 
+    /* ---------- Antes / Después slider ---------- */
+    .ba-wrap{position:relative;overflow:hidden;border-radius:1.25rem;user-select:none}
+    .ba-after{position:absolute;inset:0;clip-path:inset(0 0 0 50%)}
+    .ba-range{position:absolute;inset:auto 0 0 0;width:100%;bottom:50%;transform:translateY(50%);
+      -webkit-appearance:none;appearance:none;background:transparent;z-index:30;cursor:ew-resize;height:40px}
+    .ba-range::-webkit-slider-thumb{-webkit-appearance:none;height:40px;width:40px;border-radius:9999px;background:#fff;border:4px solid #39BBD1;box-shadow:0 6px 18px rgba(0,0,0,.25);cursor:ew-resize}
+    .ba-range::-moz-range-thumb{height:40px;width:40px;border-radius:9999px;background:#fff;border:4px solid #39BBD1;cursor:ew-resize}
+    .ba-line{position:absolute;top:0;bottom:0;width:3px;background:#fff;left:50%;transform:translateX(-50%);z-index:20;pointer-events:none;box-shadow:0 0 0 1px rgba(0,0,0,.1)}
+ 
+    details > summary{list-style:none}
+    details > summary::-webkit-details-marker{display:none}
+    details[open] .faq-icon{transform:rotate(45deg)}
   </style>
-
+ 
+  <!-- Schema (Brief 1.1/1.2 → descripción sin segmento finca/mosquitos) -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Aire Proyectos Panamá",
-    "url": "https://aireproyectospanama.com/",
-    "telephone": "+50761095573",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Calle Manuel Ma. Icaza, Edificio Delesseps, Piso 9, Área Bancaria",
-      "addressLocality": "Ciudad de Panamá",
-      "addressCountry": "PA"
-    },
-    "areaServed": "Panamá",
-    "foundingDate": "2012",
-    "description": "Empresa de ingeniería y climatización de servicio completo: diseño, instalación, mantenimiento y reparación HVAC, VRF, recuperación de calor, ductería, limpieza de ductos y control de olores industriales.",
-    "makesOffer": [
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Diseño e ingeniería HVAC"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Instalación de sistemas VRF"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Recuperación de calor para piscinas"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mantenimiento HVAC preventivo y correctivo"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Limpieza y desinfección de ductos"}}
-    ]
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Aire Proyectos Panamá",
+    "url":"https://aireproyectospanama.com/",
+    "telephone":"+50761095573",
+    "foundingDate":"2012",
+    "address":{"@type":"PostalAddress","streetAddress":"Calle Manuel Ma. Icaza, Edificio Delesseps, Piso 9, Área Bancaria","addressLocality":"Ciudad de Panamá","addressCountry":"PA"},
+    "areaServed":"Panamá",
+    "description":"Ingeniería y climatización HVAC de servicio completo en Panamá: diseño, instalación, mantenimiento y reparación. Sistemas VRF, chillers, ductería, recuperación de calor para piscinas, SmartMist, Durkeesox y control de olores industriales."
   }
   </script>
 </head>
-
-<body class="font-sans text-slate-900 antialiased selection:bg-brand-blue selection:text-white">
-  <div class="bg-brand-ink text-white">
-    <div class="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-2 text-sm sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
-      <p class="font-semibold">Respondemos en menos de 2 horas en horario laboral.</p>
-      <div class="flex flex-wrap items-center gap-3 text-white/88">
-        <a class="hover:text-brand-cyan" href="tel:+5073816530">Tel. +507 381-6530</a>
-        <span class="hidden sm:inline">|</span>
-        <a class="hover:text-brand-cyan" href="https://wa.me/50761095573?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20Aire%20Proyectos%20Panam%C3%A1." target="_blank" rel="noopener">WhatsApp +507 6109-5573</a>
-      </div>
-    </div>
-  </div>
-
-  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/94 backdrop-blur-xl">
-    <div class="mx-auto flex min-h-[86px] max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-      <a href="#inicio" class="replace-logo" data-replace="Reemplazar por logo principal: assets/logo-aire-proyectos.svg" aria-label="Aire Proyectos Panamá - Inicio">
-        <span class="placeholder-title">Aire Proyectos Panamá<br><span class="text-xs font-semibold normal-case tracking-normal text-slate-500">Logo principal</span></span>
+ 
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-brand-cool selection:text-white">
+ 
+  <!-- =====================================================================
+       HEADER / NAV PRINCIPAL  (navegación de la landing → ancla a secciones)
+       ===================================================================== -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-xl">
+    <div class="mx-auto flex min-h-[80px] max-w-7xl items-center justify-between gap-5 px-4 sm:px-6 lg:px-8">
+ 
+      <!-- LOGO  ► REEMPLAZAR por <img src="logo.svg"> -->
+      <a href="#inicio" aria-label="Aire Proyectos Panamá - Inicio" class="flex items-center gap-3">
+        <!-- 🔁 REEMPLAZAR LOGO PRINCIPAL (sugerido 210×56 px, fondo transparente) -->
+        <span class="logo-ph h-12 w-[160px] sm:w-[200px]">LOGO<br>AIRE&nbsp;PROYECTOS</span>
       </a>
-      <nav class="desktop-nav flex items-center gap-6" aria-label="Navegación principal">
-        <a class="nav-link" href="#servicios">Servicios</a>
-        <a class="nav-link" href="#residencial">Residencial</a>
-        <a class="nav-link" href="#portafolio">Portafolio</a>
-        <a class="nav-link" href="#mantenimiento">Mantenimiento</a>
-        <a class="nav-link" href="#recursos">Recursos</a>
-        <a class="rounded-full bg-brand-blue px-5 py-3 text-sm font-extrabold text-white shadow-card transition hover:bg-brand-navy" href="#contacto">Cotizar</a>
+ 
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Navegación principal">
+        <a href="#servicios" class="text-sm font-bold text-slate-600 transition hover:text-brand-coolDark">Servicios</a>
+        <a href="#productos" class="text-sm font-bold text-slate-600 transition hover:text-brand-coolDark">Productos</a>
+        <a href="#portafolio" class="text-sm font-bold text-slate-600 transition hover:text-brand-coolDark">Portafolio</a>
+        <a href="#mantenimiento" class="text-sm font-bold text-slate-600 transition hover:text-brand-coolDark">Mantenimiento</a>
+        <a href="#empresa" class="text-sm font-bold text-slate-600 transition hover:text-brand-coolDark">Empresa</a>
+        <a href="#contacto" class="text-sm font-bold text-slate-600 transition hover:text-brand-coolDark">Contacto</a>
       </nav>
-      <button class="mobile-menu-button rounded-full border border-slate-200 px-4 py-2 text-sm font-extrabold text-brand-navy" type="button" aria-label="Abrir menú" aria-controls="mobile-panel" aria-expanded="false">Menú</button>
+ 
+      <div class="hidden items-center gap-3 lg:flex">
+        <!-- IDEA #2 (Brief 10): toggle bilingüe — placeholder, apuntar a /en/ cuando exista -->
+        <a href="/en/" aria-label="English version" class="rounded-lg border border-slate-200 px-2.5 py-1.5 font-mono text-xs font-bold text-slate-500 transition hover:border-brand-cool hover:text-brand-coolDark" title="Versión en inglés (próximamente)">EN</a>
+        <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%20Panam%C3%A1%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para..." target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 rounded-xl bg-emerald-500 px-4 py-2.5 text-sm font-black text-white shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-600">
+          <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.735 1.03 3.39 1.647 5.392 1.648 5.47 0 9.92-4.447 9.923-9.917A9.86 9.86 0 0019.06 4.91 9.86 9.86 0 0012.05 2c-5.473 0-9.922 4.447-9.925 9.923a9.87 9.87 0 001.58 5.36l-.999 3.648 3.948-1.038zm11.387-5.57c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.099-.198.05-.372-.025-.52-.074-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.214 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.626.711.226 1.358.194 1.87.118.57-.085 1.758-.718 2.006-1.413.248-.694.248-1.29.173-1.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+ 
+      <button id="mobile-menu-btn" class="rounded-xl border border-slate-200 p-2 text-slate-700 lg:hidden" aria-label="Abrir menú" aria-expanded="false">
+        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
-    <div id="mobile-panel" class="mobile-panel border-t border-slate-200 bg-white px-4 pb-4 sm:px-6">
-      <div class="mx-auto grid max-w-7xl gap-2 py-3">
-        <a class="nav-link py-2" href="#servicios">Servicios</a>
-        <a class="nav-link py-2" href="#residencial">Residencial</a>
-        <a class="nav-link py-2" href="#portafolio">Portafolio</a>
-        <a class="nav-link py-2" href="#mantenimiento">Mantenimiento</a>
-        <a class="nav-link py-2" href="#recursos">Recursos</a>
-        <a class="rounded-full bg-brand-blue px-5 py-3 text-center text-sm font-extrabold text-white" href="#contacto">Cotizar</a>
+ 
+    <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white px-4 py-5 lg:hidden">
+      <div class="grid gap-1">
+        <a href="#servicios" class="rounded-xl px-3 py-2.5 font-bold text-slate-700 hover:bg-slate-100">Servicios</a>
+        <a href="#productos" class="rounded-xl px-3 py-2.5 font-bold text-slate-700 hover:bg-slate-100">Productos y tecnologías</a>
+        <a href="#portafolio" class="rounded-xl px-3 py-2.5 font-bold text-slate-700 hover:bg-slate-100">Portafolio</a>
+        <a href="#mantenimiento" class="rounded-xl px-3 py-2.5 font-bold text-slate-700 hover:bg-slate-100">Mantenimiento</a>
+        <a href="#empresa" class="rounded-xl px-3 py-2.5 font-bold text-slate-700 hover:bg-slate-100">Empresa</a>
+        <a href="#contacto" class="rounded-xl px-3 py-2.5 font-bold text-slate-700 hover:bg-slate-100">Contacto</a>
+        <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para..." target="_blank" rel="noopener" class="mt-2 rounded-xl bg-emerald-500 px-3 py-3 text-center font-black text-white">Escribir por WhatsApp</a>
       </div>
     </div>
   </header>
-
-  <main id="inicio">
-    <section class="hero-grid overflow-hidden border-b border-slate-200 bg-white">
-      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
-        <div>
-          <div class="mb-6 flex flex-wrap gap-3">
-            <span class="pill rounded-full px-4 py-2 text-sm font-extrabold text-brand-navy">Desde 2012</span>
-            <span class="pill rounded-full px-4 py-2 text-sm font-extrabold text-brand-navy">Equipo propio</span>
-            <span class="pill rounded-full px-4 py-2 text-sm font-extrabold text-brand-navy">Comercial · Industrial · Residencial premium</span>
-          </div>
-          <p class="section-kicker">Ingeniería HVAC en Panamá</p>
-          <h1 class="mt-3 max-w-5xl text-4xl font-black leading-[1.03] tracking-tight text-brand-ink sm:text-5xl lg:text-6xl">
-            13 años diseñando e instalando sistemas de climatización comercial, recuperación de calor y soluciones de aire para Panamá.
-          </h1>
-          <p class="mt-6 max-w-2xl text-xl leading-8 text-slate-700">
-            Proyectos a medida. Instalación responsable. Soporte real. Diseñamos, instalamos, mantenemos y reparamos sistemas HVAC sin obligarte a una marca específica: elegimos la solución que mejor se adapta al proyecto y al presupuesto.
-          </p>
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a class="rounded-full bg-brand-orange px-7 py-4 text-center text-base font-black text-white shadow-card transition hover:bg-orange-600" href="https://wa.me/50761095573?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20un%20proyecto%20de%20climatizaci%C3%B3n." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
-            <a class="rounded-full border border-brand-blue/30 bg-white px-7 py-4 text-center text-base font-black text-brand-navy transition hover:border-brand-blue hover:text-brand-blue" href="#portafolio">Ver proyectos reales</a>
-          </div>
-          <div class="mt-10 grid max-w-2xl grid-cols-3 gap-3">
-            <div class="rounded-2xl bg-white/85 p-4 shadow-card ring-1 ring-slate-200">
-              <div class="counter text-3xl font-black text-brand-blue" data-target="13">0</div>
-              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">años operando</p>
-            </div>
-            <div class="rounded-2xl bg-white/85 p-4 shadow-card ring-1 ring-slate-200">
-              <div class="counter text-3xl font-black text-brand-blue" data-target="200">0</div>
-              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">+ instalaciones</p>
-            </div>
-            <div class="rounded-2xl bg-white/85 p-4 shadow-card ring-1 ring-slate-200">
-              <div class="text-3xl font-black text-brand-blue">2h</div>
-              <p class="text-xs font-bold uppercase tracking-wide text-slate-500">respuesta laboral</p>
-            </div>
-          </div>
+ 
+  <main>
+    <!-- =====================================================================
+         HERO  (Brief 5.3 → nuevo titular "13 años...", tono de resultados)
+         ===================================================================== -->
+    <section id="inicio" class="blueprint relative overflow-hidden bg-brand-deep text-white">
+      <div class="absolute inset-0 bg-gradient-to-b from-brand-deep/0 via-brand-deep/40 to-brand-deep"></div>
+      <div class="relative mx-auto max-w-7xl px-4 pt-16 pb-12 sm:px-6 sm:pt-20 lg:px-8 lg:pt-24">
+        <p class="eyebrow inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-brand-cool">
+          <span class="h-2 w-2 animate-pulse rounded-full bg-brand-cool"></span>
+          Ingeniería y climatización HVAC · Panamá · desde 2012
+        </p>
+ 
+        <h1 class="font-display mt-7 max-w-5xl text-4xl font-extrabold leading-[1.02] tracking-tight sm:text-5xl lg:text-[4.1rem]">
+          13 años diseñando e instalando sistemas de <span class="gradient-text">climatización comercial, recuperación de calor</span> y soluciones de aire para Panamá.
+        </h1>
+ 
+        <p class="mt-6 max-w-2xl text-lg font-medium leading-8 text-slate-300">
+          Proyectos a medida. Instalación responsable. Soporte real. Cuando el confort de tu edificio no puede fallar, trabajas con quien lleva 13 años sin improvisar.
+        </p>
+ 
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+          <a href="#contacto" class="inline-flex items-center justify-center rounded-2xl bg-brand-warm px-7 py-4 text-base font-black text-white shadow-xl shadow-orange-500/25 transition hover:bg-brand-warmDark">
+            Solicitar evaluación sin costo
+          </a>
+          <a href="#portafolio" class="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 px-7 py-4 text-base font-black text-white backdrop-blur transition hover:border-brand-cool hover:bg-white/10">
+            Ver portafolio de obra
+          </a>
         </div>
-        <div class="relative">
-          <!-- Reemplazar este bloque por <img src="assets/hero-instalacion-hvac.jpg" alt="Instalación HVAC de Aire Proyectos Panamá" class="h-full w-full rounded-[2rem] object-cover shadow-soft"> -->
-          <div class="replace-photo min-h-[34rem] shadow-soft" data-replace="Foto real requerida: instalación HVAC, sala de máquinas o equipo en operación.">
-            <span class="placeholder-title text-lg">Placeholder de foto principal</span>
-          </div>
-          <div class="absolute -bottom-6 left-6 right-6 rounded-3xl bg-white p-5 shadow-soft ring-1 ring-slate-200">
-            <p class="text-sm font-bold uppercase tracking-wide text-brand-blue">Resultado comprobado</p>
-            <p class="mt-1 text-2xl font-black text-brand-ink">PH Punta Roca: $36,000/año de ahorro</p>
-            <p class="mt-1 text-sm text-slate-600">Recuperación de calor para piscina con resultado económico visible.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="border-b border-slate-200 bg-slate-50 py-8" aria-label="Resumen en inglés">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="rounded-3xl bg-white p-6 shadow-card ring-1 ring-slate-200 md:flex md:items-center md:justify-between md:gap-8">
+ 
+        <!-- IDEA #3 (Brief 10): contador animado de proyectos -->
+        <div class="mt-12 grid max-w-3xl grid-cols-2 gap-4 border-t border-white/10 pt-8 sm:grid-cols-4">
           <div>
-            <p class="section-kicker">English summary</p>
-            <p class="mt-2 text-lg font-bold text-brand-ink">HVAC engineering, VRF systems, pool heat recovery and preventive maintenance in Panama.</p>
-            <p class="mt-2 max-w-3xl text-sm leading-6 text-slate-600">A partial English section is ready for international developers, PH owners and investors. It can be expanded into a full bilingual version when final translations are approved.</p>
+            <p class="font-display text-4xl font-extrabold text-white"><span class="counter" data-target="200">0</span>+</p>
+            <p class="mt-1 text-xs font-bold uppercase tracking-wide text-slate-400">Instalaciones realizadas</p>
           </div>
-          <a class="mt-5 inline-flex rounded-full bg-brand-navy px-5 py-3 text-sm font-extrabold text-white md:mt-0" href="#contacto">Request information</a>
+          <div>
+            <p class="font-display text-4xl font-extrabold text-white"><span class="counter" data-target="13">0</span></p>
+            <p class="mt-1 text-xs font-bold uppercase tracking-wide text-slate-400">Años de operación</p>
+          </div>
+          <div>
+            <p class="font-display text-4xl font-extrabold text-white">$<span class="counter" data-target="36">0</span>k</p>
+            <p class="mt-1 text-xs font-bold uppercase tracking-wide text-slate-400">Ahorro/año comprobado*</p>
+          </div>
+          <div>
+            <p class="font-display text-4xl font-extrabold text-white">&lt;2h</p>
+            <p class="mt-1 text-xs font-bold uppercase tracking-wide text-slate-400">Respuesta en horario laboral</p>
+          </div>
+        </div>
+        <p class="mt-3 font-mono text-[11px] text-slate-500">* Caso PH Punta Roca — recuperación de calor. <span class="text-slate-600">Cifra de tonelaje instalado: pendiente de confirmar.</span></p>
+      </div>
+ 
+      <!-- ===== BOTONES A PÁGINAS INTERNAS (debajo del hero) =====
+           Estos enlaces dirigen el tráfico a las páginas internas del sitio.
+           ► REEMPLAZAR los href por las rutas reales cuando existan las páginas. -->
+      <div class="relative border-t border-white/10 bg-brand-navy/60">
+        <div class="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-white/10 px-0 sm:px-6 lg:grid-cols-5 lg:px-8">
+          <a href="/servicios/" class="group flex flex-col gap-1 p-5 transition hover:bg-white/5">
+            <span class="text-2xl">🛠️</span>
+            <span class="font-display text-base font-bold text-white group-hover:text-brand-cool">Servicios</span>
+            <span class="text-xs font-semibold text-slate-400">Diseño, instalación y reparación</span>
+          </a>
+          <a href="/productos/" class="group flex flex-col gap-1 p-5 transition hover:bg-white/5">
+            <span class="text-2xl">📦</span>
+            <span class="font-display text-base font-bold text-white group-hover:text-brand-cool">Productos y tecnologías</span>
+            <span class="text-xs font-semibold text-slate-400">SmartMist · Durkeesox · VRF</span>
+          </a>
+          <a href="/portafolio/" class="group flex flex-col gap-1 p-5 transition hover:bg-white/5">
+            <span class="text-2xl">🏗️</span>
+            <span class="font-display text-base font-bold text-white group-hover:text-brand-cool">Portafolio</span>
+            <span class="text-xs font-semibold text-slate-400">13 años de obra real</span>
+          </a>
+          <a href="/empresa/" class="group flex flex-col gap-1 p-5 transition hover:bg-white/5">
+            <span class="text-2xl">🏢</span>
+            <span class="font-display text-base font-bold text-white group-hover:text-brand-cool">Empresa</span>
+            <span class="text-xs font-semibold text-slate-400">Trayectoria y credenciales</span>
+          </a>
+          <a href="/contacto/" class="group col-span-2 flex flex-col gap-1 p-5 transition hover:bg-white/5 lg:col-span-1">
+            <span class="text-2xl">💬</span>
+            <span class="font-display text-base font-bold text-white group-hover:text-brand-cool">Contacto</span>
+            <span class="text-xs font-semibold text-slate-400">Cotiza por WhatsApp o email</span>
+          </a>
         </div>
       </div>
     </section>
-
-    <section id="servicios" class="py-20 sm:py-24">
+ 
+    <!-- =====================================================================
+         BARRA DE CREDENCIALES  (Brief 7.2 / Idea #10 → garantía de respuesta)
+         ===================================================================== -->
+    <section class="border-b border-slate-200 bg-white">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-4 px-4 py-7 sm:px-6 md:grid-cols-4 lg:px-8">
+        <div class="flex items-center gap-3"><span class="text-xl">✅</span><p class="text-sm font-bold leading-5 text-slate-700">Equipo propio.<br><span class="font-medium text-slate-500">No subcontratamos la instalación.</span></p></div>
+        <div class="flex items-center gap-3"><span class="text-xl">📍</span><p class="text-sm font-bold leading-5 text-slate-700">Ciudad de Panamá<br><span class="font-medium text-slate-500">con capacidad para otras regiones.</span></p></div>
+        <div class="flex items-center gap-3"><span class="text-xl">🔧</span><p class="text-sm font-bold leading-5 text-slate-700">Cualquier marca.<br><span class="font-medium text-slate-500">No estamos atados a un fabricante.</span></p></div>
+        <div class="flex items-center gap-3"><span class="text-xl">⏱️</span><p class="text-sm font-bold leading-5 text-slate-700">Respuesta &lt; 2 horas<br><span class="font-medium text-slate-500">en horario laboral.</span></p></div>
+      </div>
+    </section>
+ 
+    <!-- =====================================================================
+         SERVICIOS  (Brief 2 → catálogo completo, organizado por categoría)
+         ===================================================================== -->
+    <section id="servicios" class="grid-soft border-b border-slate-200 bg-slate-50 py-20 sm:py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl">
-          <p class="section-kicker">Catálogo completo</p>
-          <h2 class="mt-3 text-3xl font-black tracking-tight text-brand-ink sm:text-5xl">Todo lo que necesita tu sistema de aire: diseño, instalación, mantenimiento y reparación.</h2>
-          <p class="mt-5 text-lg leading-8 text-slate-700">El problema se atiende desde el resultado: reducir consumo, asegurar continuidad, mejorar confort, calentar una piscina o controlar aire en una operación crítica. La ingeniería viene después, con la solución correcta.</p>
+        <div class="reveal max-w-3xl">
+          <p class="eyebrow flex items-center gap-3 text-brand-coolDark"><span class="text-slate-300">01</span><span class="h-px w-10 bg-brand-cool"></span>Servicios</p>
+          <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">Empresa de ingeniería y climatización de servicio completo</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">Diseñamos, instalamos, mantenemos y reparamos. Todo bajo un mismo equipo. Esto es lo que hacemos, organizado por categoría — no en una lista interminable.</p>
         </div>
-
-        <div class="mt-12 grid gap-6 lg:grid-cols-3">
-          <article class="rounded-3xl bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft text-xl font-black text-brand-blue">01</div>
-            <h3 class="text-2xl font-black text-brand-ink">Diseño e ingeniería HVAC</h3>
-            <p class="mt-4 leading-7 text-slate-600">Planos, memorias de cálculo, selección de equipos y coordinación con arquitectos y constructores. El cliente no tiene que saber qué equipo comprar: lo resolvemos de punta a punta.</p>
+ 
+        <div class="mt-14 grid gap-6 lg:grid-cols-3">
+ 
+          <!-- Diseño e ingeniería HVAC -->
+          <article class="reveal flex flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-2xl">📐</span>
+            <h3 class="font-display mt-5 text-xl font-bold text-slate-950">Diseño e ingeniería HVAC</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Proyectos completos desde cero: planos, memorias de cálculo, selección de equipos y coordinación con arquitectos y constructores. El cliente no necesita saber qué comprar — nos encargamos de todo.</p>
           </article>
-          <article class="rounded-3xl bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft text-xl font-black text-brand-blue">02</div>
-            <h3 class="text-2xl font-black text-brand-ink">Sistemas de climatización</h3>
-            <p class="mt-4 leading-7 text-slate-600">Splits, cassettes, ventana, piso-techo, VRF, fan coils, unidades manejadoras, chillers, torres de enfriamiento, heat pumps y refrigeración comercial e industrial.</p>
-          </article>
-          <article class="rounded-3xl bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-soft text-xl font-black text-brand-blue">03</div>
-            <h3 class="text-2xl font-black text-brand-ink">Venta y distribución</h3>
-            <p class="mt-4 leading-7 text-slate-600">Conseguimos, importamos e instalamos equipos de climatización de cualquier marca. No estamos atados a una sola línea: recomendamos lo que conviene al proyecto.</p>
-          </article>
-        </div>
-
-        <div class="mt-14 rounded-[2rem] bg-white p-5 shadow-card ring-1 ring-slate-200 sm:p-8">
-          <div class="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-center">
-            <div>
-              <p class="section-kicker">Ductería</p>
-              <h3 class="mt-3 text-3xl font-black text-brand-ink">Tres tecnologías para distribuir aire con eficiencia, silencio y buen acabado.</h3>
-              <p class="mt-4 leading-7 text-slate-600">La selección del material cambia el rendimiento, el mantenimiento y la experiencia del usuario. Por eso diseñamos la distribución según la necesidad real del espacio.</p>
-              <!-- Reemplazar este bloque por <img src="assets/ducteria-durkeesox.jpg" alt="Ductos Durkeesox instalados" class="mt-6 h-72 w-full rounded-3xl object-cover"> -->
-              <div class="replace-photo mt-6" data-replace="Foto real requerida: ductería instalada, idealmente Durkeesox en operación.">
-                <span class="placeholder-title">Placeholder foto ductería</span>
-              </div>
-            </div>
-            <div class="overflow-hidden rounded-3xl border border-slate-200">
-              <table class="table-card w-full border-collapse bg-white text-left text-sm">
-                <thead class="bg-brand-navy text-white">
-                  <tr>
-                    <th class="px-5 py-4 font-black">Tipo</th>
-                    <th class="px-5 py-4 font-black">Aplicación y ventajas</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-slate-200">
-                  <tr>
-                    <td class="px-5 py-5 font-black text-brand-ink">Ductería metálica</td>
-                    <td class="px-5 py-5 leading-6 text-slate-600">Alta durabilidad para proyectos comerciales e industriales de cualquier escala.</td>
-                  </tr>
-                  <tr class="bg-slate-50">
-                    <td class="px-5 py-5 font-black text-brand-ink">Duct board P3</td>
-                    <td class="px-5 py-5 leading-6 text-slate-600">Panel rígido de fibra de vidrio con aislamiento térmico y acústico, ideal donde el ruido y la temperatura son críticos.</td>
-                  </tr>
-                  <tr>
-                    <td class="px-5 py-5 font-black text-brand-ink">Cloth ducts Durkeesox</td>
-                    <td class="px-5 py-5 leading-6 text-slate-600">Ductos de tela de alto rendimiento para oficinas abiertas, gimnasios, restaurantes y supermercados. Distribución uniforme, fácil limpieza y acabado visual limpio. Aire Proyectos es representante oficial de Durkeesox en Panamá.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-
-        <div id="piscinas" class="mt-14 rounded-[2rem] bg-brand-ink p-5 text-white shadow-soft sm:p-8 lg:p-10">
-          <div class="grid gap-9 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div>
-              <p class="section-kicker text-brand-cyan">Piscinas</p>
-              <h3 class="mt-3 text-3xl font-black sm:text-4xl">Calefacción de piscinas con la tecnología que realmente aplica a tu caso.</h3>
-              <p class="mt-5 leading-8 text-white/78">Si tienes piscina en casa y ya tienes equipo de A/C, probablemente puedes calentar tu piscina sin gas y sin costo eléctrico adicional. La evaluación técnica es sin costo.</p>
-              <a class="mt-7 inline-flex rounded-full bg-brand-orange px-6 py-3 font-black text-white" href="https://wa.me/50761095573?text=Hola%2C%20tengo%20una%20piscina%20y%20quiero%20evaluar%20recuperaci%C3%B3n%20de%20calor%20o%20heat%20pump." target="_blank" rel="noopener">Evaluar mi piscina</a>
-            </div>
-            <div class="grid gap-4">
-              <div class="rounded-3xl bg-white/10 p-5 ring-1 ring-white/15">
-                <h4 class="text-xl font-black">Recuperación de calor</h4>
-                <p class="mt-2 text-white/75">Aprovecha el calor que descarta el A/C existente para calentar el agua.</p>
-                <p class="mt-3 text-sm font-bold text-brand-cyan">Ideal para: casas y residencias privadas con piscina y equipo de A/C cercano; también edificios, hoteles y clubes.</p>
-              </div>
-              <div class="rounded-3xl bg-white/10 p-5 ring-1 ring-white/15">
-                <h4 class="text-xl font-black">Heat pump para piscina</h4>
-                <p class="mt-2 text-white/75">Equipo dedicado que extrae calor del aire ambiente.</p>
-                <p class="mt-3 text-sm font-bold text-brand-cyan">Ideal cuando no hay A/C cercano o se necesita mayor capacidad.</p>
-              </div>
-              <div class="rounded-3xl bg-white/10 p-5 ring-1 ring-white/15">
-                <h4 class="text-xl font-black">Calentador a gas</h4>
-                <p class="mt-2 text-white/75">Calentamiento directo por combustión de gas.</p>
-                <p class="mt-3 text-sm font-bold text-brand-cyan">Ideal cuando se requiere calentamiento rápido o no hay otra fuente disponible.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-14 grid gap-6 lg:grid-cols-2">
-          <article id="smartmist" class="rounded-[2rem] bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <p class="section-kicker">Producto exclusivo</p>
-            <h3 class="mt-3 text-3xl font-black text-brand-ink">SmartMist reduce el esfuerzo del condensador y ayuda a bajar el consumo del A/C.</h3>
-            <p class="mt-4 leading-8 text-slate-600">SmartMist es un sistema de nebulización que reduce la temperatura ambiente alrededor del condensador. Al bajar la temperatura de entrada del aire, el equipo trabaja con menos esfuerzo y consume menos electricidad. Aire Proyectos representa y distribuye este producto en Panamá desde Estados Unidos.</p>
-            <ul class="mt-5 grid gap-3 text-slate-700">
-              <li class="flex gap-3"><span class="font-black text-brand-blue">✓</span>Aplicación comercial y residencial.</li>
-              <li class="flex gap-3"><span class="font-black text-brand-blue">✓</span>Reducción comprobable en el consumo del sistema de A/C mediante evaluación técnica.</li>
-              <li class="flex gap-3"><span class="font-black text-brand-blue">✓</span>Producto con respaldo técnico del fabricante en EE.UU.</li>
+ 
+          <!-- Climatización (todos los tipos) -->
+          <article class="reveal flex flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-2xl">❄️</span>
+            <h3 class="font-display mt-5 text-xl font-bold text-slate-950">Sistemas de climatización — todos los tipos</h3>
+            <ul class="mt-3 space-y-1.5 text-sm leading-6 text-slate-600">
+              <li>• A/C convencional: splits, cassettes, ventana, piso-techo</li>
+              <li>• <span class="font-bold text-slate-800">Sistemas VRF</span> — comercial y residencial</li>
+              <li>• Fan coils y unidades manejadoras de aire</li>
+              <li>• Chillers y torres de enfriamiento por agua</li>
+              <li>• Heat pumps para espacios habitables</li>
+              <li>• Refrigeración comercial e industrial</li>
             </ul>
-            <!-- Reemplazar este bloque por <img src="assets/smartmist-producto.jpg" alt="Sistema SmartMist instalado en condensador" class="mt-6 h-72 w-full rounded-3xl object-cover"> -->
-            <div class="replace-photo mt-6" data-replace="Foto real requerida: SmartMist instalado en condensador."><span class="placeholder-title">Placeholder SmartMist</span></div>
+            <p class="mt-4 rounded-xl bg-slate-50 p-3 text-xs font-semibold text-slate-500">No estamos atados a ninguna marca: instalamos el equipo que mejor se adapte al proyecto y al presupuesto.</p>
           </article>
-          <article class="rounded-[2rem] bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <p class="section-kicker">Ambientes exteriores</p>
-            <h3 class="mt-3 text-3xl font-black text-brand-ink">Misting de alta presión para bajar temperatura en terrazas, patios y áreas de piscina.</h3>
-            <p class="mt-4 leading-8 text-slate-600">Instalamos sistemas de nebulización de alta presión para restaurantes con terraza, áreas de piscina, patios comerciales, zonas de espera al aire libre y residencias.</p>
-            <div class="mt-6 grid gap-3 sm:grid-cols-2">
-              <span class="rounded-2xl bg-slate-50 p-4 font-bold text-slate-700">Restaurantes</span>
-              <span class="rounded-2xl bg-slate-50 p-4 font-bold text-slate-700">Piscinas</span>
-              <span class="rounded-2xl bg-slate-50 p-4 font-bold text-slate-700">Patios comerciales</span>
-              <span class="rounded-2xl bg-slate-50 p-4 font-bold text-slate-700">Residencias</span>
+ 
+          <!-- Ductería (3 tecnologías) -->
+          <article class="reveal flex flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-2xl">🌬️</span>
+            <h3 class="font-display mt-5 text-xl font-bold text-slate-950">Ductería — tres tecnologías</h3>
+            <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-600">
+              <li><span class="font-bold text-slate-800">Ductería metálica.</span> El estándar de la industria, alta durabilidad para cualquier escala.</li>
+              <li><span class="font-bold text-slate-800">Duct board P3.</span> Panel rígido de fibra de vidrio; excelente aislamiento térmico y acústico.</li>
+              <li><span class="font-bold text-slate-800">Cloth ducts — Durkeesox.</span> Ductos de tela de alto rendimiento. <span class="text-brand-coolDark font-semibold">Representantes oficiales en Panamá</span> (ver Productos).</li>
+            </ul>
+          </article>
+ 
+          <!-- Mantenimiento y reparación -->
+          <article class="reveal flex flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-100 text-2xl">🔁</span>
+            <h3 class="font-display mt-5 text-xl font-bold text-slate-950">Mantenimiento y reparación</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Preventivo, correctivo y reparación de cualquier sistema HVAC y de refrigeración — comercial, industrial y residencial. No importa qué marca instaló ni quién hizo la instalación original.</p>
+            <a href="#mantenimiento" class="mt-4 text-sm font-black text-brand-warm hover:text-brand-warmDark">Ver contratos de mantenimiento →</a>
+          </article>
+ 
+          <!-- Limpieza y desinfección de ductos (NUEVO) -->
+          <article class="reveal flex flex-col rounded-3xl border-2 border-brand-cool/40 bg-white p-7 shadow-card">
+            <div class="flex items-center justify-between">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-100 text-2xl">🧼</span>
+              <span class="rounded-full bg-brand-cool/10 px-3 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-brand-coolDark">Servicio nuevo</span>
             </div>
-            <!-- Reemplazar este bloque por <img src="assets/misting-terraza.jpg" alt="Sistema de misting en terraza" class="mt-6 h-72 w-full rounded-3xl object-cover"> -->
-            <div class="replace-photo mt-6" data-replace="Foto real requerida: sistema de misting en terraza o zona exterior."><span class="placeholder-title">Placeholder misting exterior</span></div>
+            <h3 class="font-display mt-5 text-xl font-bold text-slate-950">Limpieza y desinfección de ductos</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Limpieza interna de ductos, difusores y rejillas con equipos especializados, y desinfección para eliminar bacterias, hongos y contaminantes. Aplica a cualquier instalación existente — no solo a las que instalamos nosotros.</p>
+            <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20quiero%20cotizar%20limpieza%20y%20desinfecci%C3%B3n%20de%20ductos." target="_blank" rel="noopener" class="mt-4 inline-flex w-fit items-center gap-2 rounded-xl bg-emerald-500 px-4 py-2.5 text-sm font-black text-white transition hover:bg-emerald-600">Cotizar limpieza de ductos</a>
+          </article>
+ 
+          <!-- Venta y distribución -->
+          <article class="reveal flex flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-card">
+            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 text-2xl">🚚</span>
+            <h3 class="font-display mt-5 text-xl font-bold text-slate-950">Venta y distribución de equipos</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Vendemos equipos de cualquier marca de climatización. El cliente no busca el equipo por su cuenta: nosotros lo conseguimos, lo importamos y lo instalamos. También distribuimos <span class="font-semibold text-slate-800">filtros desechables para A/C central</span> de cualquier marca y medida.</p>
           </article>
         </div>
-
-        <div id="olores" class="mt-14 rounded-[2rem] bg-white p-7 shadow-card ring-1 ring-slate-200 lg:p-10">
-          <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-            <div>
-              <p class="section-kicker">Control industrial</p>
-              <h3 class="mt-3 text-3xl font-black text-brand-ink sm:text-4xl">Control de olores para instalaciones industriales de procesamiento.</h3>
-              <p class="mt-5 leading-8 text-slate-600">Instalamos sistemas técnicos de control de olores para mataderos industriales, plantas de procesamiento de carnes y plantas de tratamiento de residuos orgánicos. Soluciones a la medida sin interrumpir operaciones.</p>
-              <a class="mt-7 inline-flex rounded-full bg-brand-blue px-6 py-3 font-black text-white" href="https://wa.me/50761095573?text=Hola%2C%20necesito%20evaluar%20control%20de%20olores%20industriales%20en%20una%20instalaci%C3%B3n%20de%20procesamiento." target="_blank" rel="noopener">Solicitar evaluación industrial</a>
+ 
+        <!-- Control de olores industriales (Brief 3.1 → reposicionado a industria, tono técnico) -->
+        <article class="reveal mt-6 overflow-hidden rounded-3xl border border-slate-800 bg-brand-navy text-white shadow-soft">
+          <div class="grid gap-0 lg:grid-cols-2">
+            <div class="p-8 sm:p-10">
+              <p class="eyebrow text-brand-warm">Especialidad industrial</p>
+              <h3 class="font-display mt-3 text-2xl font-bold sm:text-3xl">Control de olores industriales</h3>
+              <p class="mt-4 text-base leading-8 text-slate-300">Instalamos sistemas de control de olores para mataderos industriales, plantas de procesamiento de carnes y plantas de tratamiento de residuos orgánicos. Soluciones técnicas a la medida — sin interrumpir operaciones.</p>
+              <p class="mt-4 text-sm leading-7 text-slate-400">Es una especialidad que ningún competidor convencional de A/C ofrece en Panamá.</p>
+              <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20necesito%20control%20de%20olores%20para%20una%20instalaci%C3%B3n%20industrial." target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 rounded-xl bg-brand-warm px-5 py-3 text-sm font-black text-white transition hover:bg-brand-warmDark">Hablar con un especialista</a>
             </div>
-            <!-- Reemplazar este bloque por <img src="assets/control-olores-industrial.jpg" alt="Sistema industrial de control de olores" class="h-80 w-full rounded-3xl object-cover"> -->
-            <div class="replace-photo min-h-[22rem]" data-replace="Foto real requerida: instalación industrial o sistema técnico de control de olores."><span class="placeholder-title">Placeholder control industrial</span></div>
+            <!-- 🔁 REEMPLAZAR: foto de instalación industrial de control de olores (sugerido 720×520 px) -->
+            <div class="ph dark m-6 min-h-[240px] lg:m-0 lg:rounded-none">
+              <small>Imagen real</small><b>Planta industrial / sistema de control de olores</b>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
-
-    <section id="residencial" class="bg-white py-20 sm:py-24">
+ 
+    <!-- =====================================================================
+         PRODUCTOS Y TECNOLOGÍAS  (Brief 2 → SmartMist, Durkeesox, piscinas, misting, filtros)
+         ===================================================================== -->
+    <section id="productos" class="border-b border-slate-200 bg-white py-20 sm:py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
-          <div>
-            <p class="section-kicker">Hogares residenciales</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-brand-ink sm:text-5xl">Para tu casa no tienes que conformarte con el split básico.</h2>
-            <p class="mt-5 text-lg leading-8 text-slate-700">Instalamos sistemas de climatización de nivel comercial adaptados a residencias: más eficientes, más silenciosos y más inteligentes.</p>
-            <!-- Reemplazar este bloque por <img src="assets/residencia-vrf.jpg" alt="Sistema VRF residencial instalado" class="mt-7 h-96 w-full rounded-3xl object-cover shadow-card"> -->
-            <div class="replace-photo mt-7 min-h-[24rem] shadow-card" data-replace="Foto real requerida: residencia premium con sistema VRF o heat pump instalado."><span class="placeholder-title">Placeholder residencial premium</span></div>
+        <div class="reveal max-w-3xl">
+          <p class="eyebrow flex items-center gap-3 text-brand-warm"><span class="text-slate-300">02</span><span class="h-px w-10 bg-brand-warm"></span>Productos y tecnologías</p>
+          <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">Tecnologías que representamos y diferenciadores reales</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">No son ítems genéricos de una lista: son productos con nombre, tecnología específica y un argumento de ahorro o desempeño medible.</p>
+        </div>
+ 
+        <!-- SmartMist — producto exclusivo (Brief 2 → página/visual propio) -->
+        <article class="reveal mt-12 overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-sky-50 to-white shadow-card">
+          <div class="grid gap-0 lg:grid-cols-12">
+            <div class="p-8 sm:p-10 lg:col-span-7">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="rounded-full bg-brand-coolDark px-3 py-1 font-mono text-[10px] font-black uppercase tracking-wider text-white">Producto exclusivo</span>
+                <span class="font-mono text-xs font-semibold text-slate-500">Representado y distribuido en Panamá · EE.UU.</span>
+              </div>
+              <h3 class="font-display mt-4 text-3xl font-extrabold text-slate-950">SmartMist™</h3>
+              <p class="mt-4 text-base leading-8 text-slate-600">Sistema de nebulización que reduce la temperatura alrededor del condensador del A/C. Al bajar la temperatura de entrada del aire, el equipo trabaja con menos esfuerzo y <span class="font-bold text-slate-900">consume menos electricidad</span>.</p>
+              <div class="mt-6 grid gap-3 sm:grid-cols-3">
+                <div class="rounded-2xl bg-white p-4 ring-1 ring-slate-200"><p class="text-2xl">⚡</p><p class="mt-2 text-sm font-bold text-slate-800">Ahorro eléctrico comprobado</p></div>
+                <div class="rounded-2xl bg-white p-4 ring-1 ring-slate-200"><p class="text-2xl">🏠</p><p class="mt-2 text-sm font-bold text-slate-800">Comercial y residencial</p></div>
+                <div class="rounded-2xl bg-white p-4 ring-1 ring-slate-200"><p class="text-2xl">🇺🇸</p><p class="mt-2 text-sm font-bold text-slate-800">Respaldo técnico del fabricante</p></div>
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20quiero%20informaci%C3%B3n%20sobre%20SmartMist." target="_blank" rel="noopener" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-brand-coolDark px-5 py-3 text-sm font-black text-white transition hover:bg-sky-600">Quiero ahorrar con SmartMist</a>
+            </div>
+            <!-- 🔁 REEMPLAZAR: foto/visual de SmartMist instalado (sugerido 560×520 px) -->
+            <div class="ph m-6 min-h-[260px] lg:col-span-5 lg:m-0 lg:rounded-none">
+              <small>Imagen / render</small><b>SmartMist™ junto al condensador</b>
+            </div>
           </div>
+        </article>
+ 
+        <div class="mt-6 grid gap-6 lg:grid-cols-2">
+          <!-- Durkeesox — subsección propia (Brief 2) -->
+          <article class="reveal flex flex-col overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card">
+            <!-- 🔁 REEMPLAZAR: foto de sistema Durkeesox instalado (sugerido 640×360 px) -->
+            <div class="ph min-h-[200px] rounded-none border-x-0 border-t-0">
+              <small>Imagen real</small><b>Ductos de tela Durkeesox instalados</b>
+            </div>
+            <div class="p-7">
+              <div class="flex items-center gap-3">
+                <h3 class="font-display text-xl font-bold text-slate-950">Durkeesox — cloth ducts</h3>
+                <span class="rounded-full bg-teal-100 px-2.5 py-1 font-mono text-[10px] font-bold uppercase text-teal-700">Representante oficial</span>
+              </div>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Ductos de tela de alto rendimiento para propiedades comerciales: distribución de aire uniforme, fácil limpieza y un acabado visual limpio.</p>
+              <p class="mt-3 text-sm font-semibold text-slate-700">Aplicaciones típicas:</p>
+              <p class="text-sm leading-7 text-slate-600">Oficinas abiertas, gimnasios, restaurantes y supermercados.</p>
+            </div>
+          </article>
+ 
+          <!-- Misting exterior + Filtros -->
           <div class="grid gap-6">
-            <article class="rounded-3xl bg-slate-50 p-7 ring-1 ring-slate-200">
-              <h3 class="text-2xl font-black text-brand-ink">VRF para residencias grandes</h3>
-              <p class="mt-4 leading-7 text-slate-600">Los sistemas VRF permiten controlar la temperatura por zonas y convienen para casas con múltiples ambientes. Son más silenciosos, eficientes y elegantes que soluciones convencionales.</p>
-              <p class="mt-4 rounded-2xl bg-white p-4 text-sm font-bold text-brand-navy ring-1 ring-slate-200">Recomendado para: residencias de alto nivel, remodelaciones premium y propietarios que buscan confort sin equipos visibles en cada espacio.</p>
+            <article class="reveal flex flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-100 text-2xl">💧</span>
+              <h3 class="font-display mt-4 text-xl font-bold text-slate-950">Misting para espacios exteriores</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Nebulización de alta presión para bajar la temperatura al aire libre: terrazas de restaurantes, áreas de piscina, patios comerciales y zonas de espera. Comercial y residencial.</p>
             </article>
-            <article class="rounded-3xl bg-slate-50 p-7 ring-1 ring-slate-200">
-              <h3 class="text-2xl font-black text-brand-ink">Heat pumps para hogares</h3>
-              <p class="mt-4 leading-7 text-slate-600">Calefacción y enfriamiento eficiente en un solo sistema, con bajo consumo eléctrico y operación estable cuando el proyecto requiere control térmico flexible.</p>
-            </article>
-            <article class="rounded-3xl bg-slate-50 p-7 ring-1 ring-slate-200">
-              <h3 class="text-2xl font-black text-brand-ink">Piscina residencial sin gas cuando aplica</h3>
-              <p class="mt-4 leading-7 text-slate-600">Si ya existe equipo de A/C cerca de la piscina, evaluamos recuperación de calor como alternativa eficiente para calentar el agua.</p>
+            <article class="reveal flex flex-col rounded-3xl border border-slate-200 bg-white p-7 shadow-card">
+              <div class="flex items-center justify-between">
+                <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-100 text-2xl">🔲</span>
+                <span class="rounded-full bg-orange-100 px-2.5 py-1 font-mono text-[10px] font-bold uppercase text-orange-700">Producto nuevo</span>
+              </div>
+              <h3 class="font-display mt-4 text-xl font-bold text-slate-950">Filtros desechables para A/C central</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">Para sistemas centrales de cualquier marca y medida. Disponibles para clientes residenciales y comerciales — complemento natural de los contratos de mantenimiento.</p>
             </article>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="especialidades" class="py-20 sm:py-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
-          <div>
-            <p class="section-kicker">Especialidades técnicas</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-brand-ink sm:text-5xl">VRF es una especialidad central, no una línea secundaria.</h2>
-            <p class="mt-5 text-lg leading-8 text-slate-700">Diseñamos e instalamos sistemas VRF para proyectos comerciales, industriales y residenciales de alto nivel. Es una opción potente cuando el edificio necesita eficiencia, control por zona, bajo ruido y operación confiable.</p>
-            <div class="mt-7 grid gap-4 sm:grid-cols-2">
-              <div class="rounded-3xl bg-white p-5 shadow-card ring-1 ring-slate-200"><p class="text-3xl font-black text-brand-blue">2012</p><p class="mt-1 font-bold text-slate-600">año de inicio</p></div>
-              <div class="rounded-3xl bg-white p-5 shadow-card ring-1 ring-slate-200"><p class="text-3xl font-black text-brand-blue">100%</p><p class="mt-1 font-bold text-slate-600">instalación con equipo propio</p></div>
-              <div class="rounded-3xl bg-white p-5 shadow-card ring-1 ring-slate-200"><p class="text-3xl font-black text-brand-blue">4</p><p class="mt-1 font-bold text-slate-600">tipos de proyecto: comercial, industrial, residencial premium e institucional</p></div>
-              <div class="rounded-3xl bg-white p-5 shadow-card ring-1 ring-slate-200"><p class="text-3xl font-black text-brand-blue">PA</p><p class="mt-1 font-bold text-slate-600">Ciudad de Panamá y otras regiones según alcance</p></div>
+ 
+        <!-- Calefacción de piscinas — 3 opciones (Brief 2) + dueño de casa (Brief 3.2) -->
+        <div id="piscinas" class="reveal mt-16 scroll-mt-24">
+          <div class="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 sm:p-10">
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p class="eyebrow text-brand-coolDark">Calefacción de piscinas</p>
+                <h3 class="font-display mt-2 text-2xl font-extrabold text-slate-950 sm:text-3xl">Tres tecnologías. Ningún competidor en Panamá ofrece las tres.</h3>
+              </div>
+              <a href="#calculadora" class="inline-flex shrink-0 items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black text-slate-800 transition hover:border-brand-cool hover:text-brand-coolDark">Calcular mi ahorro →</a>
             </div>
-          </div>
-          <div class="rounded-[2rem] bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <p class="section-kicker">Marcas y respaldo</p>
-            <h3 class="mt-3 text-2xl font-black text-brand-ink">Pared de logos lista para reemplazo.</h3>
-            <p class="mt-3 leading-7 text-slate-600">Coloca aquí los logos oficiales aprobados de las marcas con las que trabaja Aire Proyectos. Cada bloque está preparado para ser reemplazado por una imagen.</p>
-            <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
-              <div class="replace-logo" data-replace="Reemplazar por logo autorizado 01"><span class="placeholder-title">Daikin</span></div>
-              <div class="replace-logo" data-replace="Reemplazar por logo autorizado 02"><span class="placeholder-title">Mitsubishi</span></div>
-              <div class="replace-logo" data-replace="Reemplazar por logo autorizado 03"><span class="placeholder-title">LG</span></div>
-              <div class="replace-logo" data-replace="Reemplazar por logo autorizado 04"><span class="placeholder-title">Carrier</span></div>
-              <div class="replace-logo" data-replace="Reemplazar por logo autorizado 05"><span class="placeholder-title">Marca 05</span></div>
-              <div class="replace-logo" data-replace="Reemplazar por logo autorizado 06"><span class="placeholder-title">Marca 06</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="portafolio" class="bg-white py-20 sm:py-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <div class="max-w-3xl">
-            <p class="section-kicker">Portafolio</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-brand-ink sm:text-5xl">13 años de trabajo real, listos para mostrar.</h2>
-            <p class="mt-5 text-lg leading-8 text-slate-700">Las tarjetas están diseñadas para recibir foto principal, ficha técnica, sistema instalado, resultado concreto y año de instalación cuando esté confirmado.</p>
-          </div>
-          <a class="rounded-full bg-brand-blue px-6 py-3 text-center font-black text-white" href="#contacto">Solicitar visita técnica</a>
-        </div>
-
-        <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          <article class="project-card rounded-[2rem] bg-slate-50 p-4 ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: Super Kosher."><span class="placeholder-title">Foto proyecto</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-blue">Comercial</p><h3 class="mt-1 text-2xl font-black text-brand-ink">Super Kosher</h3><p class="mt-3 text-slate-600">Unidades de A/C con chillers + ductería.</p><p class="mt-4 rounded-2xl bg-white p-3 text-sm font-bold text-slate-700">Resultado: instalación comercial preparada para operación continua.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-slate-500">Año: por confirmar</p></div>
-          </article>
-          <article class="project-card rounded-[2rem] bg-slate-50 p-4 ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: Presidencia."><span class="placeholder-title">Foto proyecto</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-blue">Institucional</p><h3 class="mt-1 text-2xl font-black text-brand-ink">Presidencia</h3><p class="mt-3 text-slate-600">Proyecto institucional de climatización.</p><p class="mt-4 rounded-2xl bg-white p-3 text-sm font-bold text-slate-700">Resultado: sistema diseñado para exigencias de infraestructura institucional.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-slate-500">Año: por confirmar</p></div>
-          </article>
-          <article class="project-card rounded-[2rem] bg-slate-50 p-4 ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: Iglesia Hosanna."><span class="placeholder-title">Foto proyecto</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-blue">Gran aforo</p><h3 class="mt-1 text-2xl font-black text-brand-ink">Iglesia Hosanna</h3><p class="mt-3 text-slate-600">Sistema de A/C para espacio de gran aforo.</p><p class="mt-4 rounded-2xl bg-white p-3 text-sm font-bold text-slate-700">Resultado: confort para alta ocupación y uso intensivo.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-slate-500">Año: por confirmar</p></div>
-          </article>
-          <article class="project-card rounded-[2rem] bg-slate-50 p-4 ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: Sea Point."><span class="placeholder-title">Foto proyecto</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-blue">Residencial premium</p><h3 class="mt-1 text-2xl font-black text-brand-ink">Sea Point</h3><p class="mt-3 text-slate-600">Climatización residencial de alto nivel.</p><p class="mt-4 rounded-2xl bg-white p-3 text-sm font-bold text-slate-700">Resultado: confort premium con instalación responsable.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-slate-500">Año: por confirmar</p></div>
-          </article>
-          <article class="project-card rounded-[2rem] bg-slate-50 p-4 ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: Pacific Point Torre 400."><span class="placeholder-title">Foto VRF</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-blue">VRF</p><h3 class="mt-1 text-2xl font-black text-brand-ink">Pacific Point Torre 400</h3><p class="mt-3 text-slate-600">Sistema VRF en edificio residencial/comercial.</p><p class="mt-4 rounded-2xl bg-white p-3 text-sm font-bold text-slate-700">Resultado: control por zonas y eficiencia para edificio de alto nivel.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-slate-500">Año: por confirmar</p></div>
-          </article>
-          <article class="project-card rounded-[2rem] bg-slate-50 p-4 ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: The Towers Punta Paitilla."><span class="placeholder-title">Foto proyecto</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-blue">Torres</p><h3 class="mt-1 text-2xl font-black text-brand-ink">The Towers Punta Paitilla</h3><p class="mt-3 text-slate-600">Instalación en complejo de torres.</p><p class="mt-4 rounded-2xl bg-white p-3 text-sm font-bold text-slate-700">Resultado: solución HVAC para infraestructura vertical.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-slate-500">Año: por confirmar</p></div>
-          </article>
-          <article class="project-card rounded-[2rem] bg-brand-ink p-4 text-white ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: PH Punta Roca, piscina o cuarto técnico."><span class="placeholder-title">Foto piscina</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-cyan">Recuperación de calor</p><h3 class="mt-1 text-2xl font-black">PH Punta Roca</h3><p class="mt-3 text-white/75">Recuperación de calor para piscina.</p><p class="mt-4 rounded-2xl bg-white/10 p-3 text-sm font-bold text-brand-cyan">Resultado: $36,000/año de ahorro comprobado.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-white/55">Año: por confirmar</p></div>
-          </article>
-          <article class="project-card rounded-[2rem] bg-slate-50 p-4 ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: PH Villa Marina."><span class="placeholder-title">Foto piscina</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-blue">Recuperación de calor</p><h3 class="mt-1 text-2xl font-black text-brand-ink">PH Villa Marina</h3><p class="mt-3 text-slate-600">Recuperación de calor para piscina.</p><p class="mt-4 rounded-2xl bg-white p-3 text-sm font-bold text-slate-700">Resultado: piscina más confortable aprovechando calor existente.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-slate-500">Año: por confirmar</p></div>
-          </article>
-          <article class="project-card rounded-[2rem] bg-slate-50 p-4 ring-1 ring-slate-200">
-            <div class="replace-photo" data-replace="Foto real requerida: Pacific Point Torre 700."><span class="placeholder-title">Foto piscina</span></div>
-            <div class="p-4"><p class="text-sm font-black uppercase tracking-wide text-brand-blue">Recuperación de calor</p><h3 class="mt-1 text-2xl font-black text-brand-ink">Pacific Point Torre 700</h3><p class="mt-3 text-slate-600">Recuperación de calor para piscina.</p><p class="mt-4 rounded-2xl bg-white p-3 text-sm font-bold text-slate-700">Resultado: solución eficiente para operación residencial/comercial.</p><p class="mt-3 text-xs font-bold uppercase tracking-wide text-slate-500">Año: por confirmar</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="mantenimiento" class="py-20 sm:py-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="rounded-[2rem] bg-white p-7 shadow-soft ring-1 ring-slate-200 lg:p-10">
-          <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div>
-              <p class="section-kicker">Mantenimiento y contratos</p>
-              <h2 class="mt-3 text-3xl font-black tracking-tight text-brand-ink sm:text-5xl">Aire Proyectos no desaparece después de instalar.</h2>
-              <p class="mt-5 text-lg leading-8 text-slate-700">Mantenimiento preventivo, correctivo y reparación de cualquier sistema HVAC o refrigeración, comercial, industrial o residencial. Aplica para equipos instalados por Aire Proyectos y por terceros.</p>
-              <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a class="rounded-full bg-brand-blue px-6 py-3 text-center font-black text-white" href="https://wa.me/50761095573?text=Hola%2C%20quiero%20cotizar%20un%20contrato%20de%20mantenimiento%20HVAC." target="_blank" rel="noopener">Cotizar contrato</a>
-                <a class="rounded-full border border-slate-300 bg-white px-6 py-3 text-center font-black text-brand-navy" href="#contacto">Programar visita</a>
+ 
+            <div class="mt-7 grid gap-5 md:grid-cols-3">
+              <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-sky-100 text-xl">♻️</span>
+                <h4 class="font-display mt-4 text-lg font-bold text-slate-950">Recuperación de calor</h4>
+                <p class="mt-2 text-sm leading-7 text-slate-600">Aprovecha el calor que descarta el A/C existente para calentar el agua.</p>
+                <p class="mt-3 font-mono text-xs font-semibold text-slate-500">IDEAL · edificios y casas con A/C cercano a la piscina</p>
+              </div>
+              <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-teal-100 text-xl">🌡️</span>
+                <h4 class="font-display mt-4 text-lg font-bold text-slate-950">Heat pump para piscina</h4>
+                <p class="mt-2 text-sm leading-7 text-slate-600">Equipo dedicado que extrae calor del aire ambiente.</p>
+                <p class="mt-3 font-mono text-xs font-semibold text-slate-500">IDEAL · sin A/C cercano o cuando se necesita más capacidad</p>
+              </div>
+              <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-orange-100 text-xl">🔥</span>
+                <h4 class="font-display mt-4 text-lg font-bold text-slate-950">Calentador a gas</h4>
+                <p class="mt-2 text-sm leading-7 text-slate-600">Calentamiento directo por combustión de gas.</p>
+                <p class="mt-3 font-mono text-xs font-semibold text-slate-500">IDEAL · calentamiento rápido o sin otra fuente disponible</p>
               </div>
             </div>
-            <div class="grid gap-4">
-              <div class="rounded-3xl bg-slate-50 p-5 ring-1 ring-slate-200"><h3 class="text-xl font-black text-brand-ink">Contratos anuales</h3><p class="mt-2 text-slate-600">Visitas programadas, tiempos de respuesta definidos e historial de cada equipo.</p></div>
-              <div class="rounded-3xl bg-slate-50 p-5 ring-1 ring-slate-200"><h3 class="text-xl font-black text-brand-ink">Servicio correctivo y emergencias</h3><p class="mt-2 text-slate-600">Continuidad para PHs, edificios de oficinas y operaciones que no pueden parar.</p></div>
-              <div class="rounded-3xl bg-slate-50 p-5 ring-1 ring-slate-200"><h3 class="text-xl font-black text-brand-ink">Equipos de terceros</h3><p class="mt-2 text-slate-600">¿Equipo de otra empresa? También podemos darte continuidad de servicio.</p></div>
+ 
+            <!-- Brief 3.2 → bloque específico para dueños de casa -->
+            <div class="mt-6 flex flex-col gap-4 rounded-3xl border-2 border-brand-cool/30 bg-sky-50 p-6 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p class="font-display text-lg font-bold text-slate-950">¿Tienes piscina en casa?</p>
+                <p class="mt-1 max-w-2xl text-sm leading-7 text-slate-700">Si ya tienes equipo de A/C, probablemente puedes calentar tu piscina sin gas y sin costo eléctrico adicional. La evaluación técnica es sin costo. Aplica a casas y residencias privadas con piscina y equipo de A/C cercano.</p>
+              </div>
+              <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20tengo%20piscina%20en%20casa%20y%20quiero%20una%20evaluaci%C3%B3n%20sin%20costo%20para%20calentarla." target="_blank" rel="noopener" class="inline-flex shrink-0 items-center justify-center rounded-xl bg-emerald-500 px-5 py-3 text-sm font-black text-white transition hover:bg-emerald-600">Evaluación gratis para mi casa</a>
             </div>
           </div>
-        </div>
-
-        <div class="mt-10 grid gap-6 lg:grid-cols-3">
-          <article class="rounded-3xl bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <h3 class="text-2xl font-black text-brand-ink">Filtros desechables para A/C central</h3>
-            <p class="mt-4 leading-7 text-slate-600">Venta de filtros para sistemas centrales de cualquier marca y medida. Producto recurrente para clientes residenciales y comerciales.</p>
-          </article>
-          <article class="rounded-3xl bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <h3 class="text-2xl font-black text-brand-ink">Limpieza y desinfección de ductos</h3>
-            <p class="mt-4 leading-7 text-slate-600">Limpieza interna, difusores, rejillas y desinfección de ductos existentes para reducir bacterias, hongos y contaminantes.</p>
-            <a class="mt-5 inline-flex font-black text-brand-blue" href="https://wa.me/50761095573?text=Hola%2C%20quiero%20cotizar%20limpieza%20y%20desinfecci%C3%B3n%20de%20ductos." target="_blank" rel="noopener">Cotizar por WhatsApp →</a>
-          </article>
-          <article class="rounded-3xl bg-white p-7 shadow-card ring-1 ring-slate-200">
-            <h3 class="text-2xl font-black text-brand-ink">Auditoría energética</h3>
-            <p class="mt-4 leading-7 text-slate-600">Servicio de entrada para identificar cuánto se puede estar gastando de más y definir mejoras HVAC con retorno visible.</p>
-          </article>
         </div>
       </div>
     </section>
-
-    <section id="recursos" class="bg-white py-20 sm:py-24">
+ 
+    <!-- =====================================================================
+         VRF + RESIDENCIAL  (Brief 4 y 7.1 → VRF como especialidad central + casas)
+         ===================================================================== -->
+    <section class="blueprint border-b border-slate-200 bg-brand-deep py-20 text-white sm:py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <div>
-            <p class="section-kicker">Herramientas de conversión</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-brand-ink sm:text-5xl">Recursos que convierten visitantes en prospectos.</h2>
-            <p class="mt-5 text-lg leading-8 text-slate-700">El WhatsApp sigue siendo la conversión principal. Además, esta versión agrega calculadora, email opcional, guías, contenido técnico y espacios visuales de alta confianza.</p>
+        <div class="reveal grid gap-10 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-6">
+            <p class="eyebrow flex items-center gap-3 text-brand-cool"><span class="text-slate-600">★</span><span class="h-px w-10 bg-brand-cool"></span>Especialidad central</p>
+            <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight sm:text-5xl">Sistemas VRF — el núcleo de nuestro trabajo</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-300">El VRF (Variable Refrigerant Flow) es la mejor opción para edificios y residencias de cierto nivel: control de temperatura por zona, más silencioso y más eficiente que un split convencional. Es el corazón de nuestros proyectos comerciales, industriales y residenciales premium.</p>
+            <a href="#portafolio" class="mt-7 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 text-sm font-black text-slate-900 transition hover:bg-slate-100">Ver instalaciones VRF →</a>
           </div>
-          <div class="rounded-[2rem] bg-slate-50 p-7 ring-1 ring-slate-200">
-            <h3 class="text-2xl font-black text-brand-ink">Calculadora preliminar de ahorro para piscinas</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Estimación orientativa. La recomendación final requiere evaluación técnica.</p>
-            <form id="pool-calculator" class="mt-6 grid gap-4">
-              <label class="grid gap-2 text-sm font-bold text-slate-700">Tamaño aproximado de piscina en m²
-                <input class="rounded-2xl border border-slate-300 px-4 py-3 font-semibold outline-none focus:border-brand-blue" type="number" min="1" value="45" name="area" />
-              </label>
-              <label class="grid gap-2 text-sm font-bold text-slate-700">Gasto mensual actual para calentar agua, si existe
-                <input class="rounded-2xl border border-slate-300 px-4 py-3 font-semibold outline-none focus:border-brand-blue" type="number" min="0" value="300" name="cost" />
-              </label>
-              <label class="grid gap-2 text-sm font-bold text-slate-700">¿Hay equipo de A/C cercano a la piscina?
-                <select class="rounded-2xl border border-slate-300 px-4 py-3 font-semibold outline-none focus:border-brand-blue" name="nearby">
-                  <option value="yes">Sí, hay A/C cercano</option>
-                  <option value="no">No o no estoy seguro</option>
-                </select>
-              </label>
-              <button class="rounded-full bg-brand-orange px-6 py-3 font-black text-white" type="submit">Calcular estimado</button>
-            </form>
-            <div id="pool-result" class="mt-5 rounded-3xl bg-white p-5 text-sm leading-6 text-slate-700 ring-1 ring-slate-200">Completa los datos para ver una recomendación preliminar.</div>
+          <div class="grid gap-5 sm:grid-cols-2 lg:col-span-6">
+            <!-- 4.1 VRF residencial -->
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+              <span class="text-2xl">🏠</span>
+              <h3 class="font-display mt-3 text-lg font-bold">VRF para residencias</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-300">Ideal para casas grandes con múltiples ambientes que necesitan control por zona. Más silencioso, eficiente y elegante.</p>
+            </div>
+            <!-- 4.2 Heat pumps hogar -->
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+              <span class="text-2xl">🌡️</span>
+              <h3 class="font-display mt-3 text-lg font-bold">Heat pumps para hogares</h3>
+              <p class="mt-2 text-sm leading-7 text-slate-300">Calefacción y enfriamiento eficiente en un solo sistema, con bajo consumo eléctrico.</p>
+            </div>
+            <div class="rounded-3xl border border-brand-cool/40 bg-brand-cool/10 p-6 sm:col-span-2">
+              <p class="font-display text-base font-bold text-white">Para tu casa no tienes que conformarte con el split básico.</p>
+              <p class="mt-2 text-sm leading-7 text-slate-200">Instalamos sistemas de climatización de nivel comercial adaptados a residencias — más eficientes, más silenciosos, más inteligentes.</p>
+            </div>
           </div>
-        </div>
-
-        <div class="mt-12 grid gap-6 lg:grid-cols-3">
-          <article class="rounded-[2rem] bg-slate-50 p-7 ring-1 ring-slate-200">
-            <h3 class="text-2xl font-black text-brand-ink">Galería antes y después</h3>
-            <p class="mt-3 text-slate-600">Slider preparado para fotos de instalaciones seleccionadas.</p>
-            <div class="before-after mt-6 rounded-3xl bg-white p-4 ring-1 ring-slate-200">
-              <div class="grid min-h-[12rem] place-items-center rounded-2xl bg-slate-100 text-center text-sm font-black uppercase tracking-wide text-slate-500" id="before-after-label">Antes / Después</div>
-              <input class="mt-4 w-full" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después" />
-            </div>
-          </article>
-          <article class="rounded-[2rem] bg-slate-50 p-7 ring-1 ring-slate-200">
-            <h3 class="text-2xl font-black text-brand-ink">Video testimonial o recorrido</h3>
-            <p class="mt-3 text-slate-600">Espacio para video de 60 segundos de una instalación real.</p>
-            <!-- Reemplazar este bloque por <video controls poster="assets/video-poster.jpg" class="mt-6 h-64 w-full rounded-3xl object-cover"><source src="assets/recorrido-instalacion.mp4" type="video/mp4"></video> -->
-            <div class="replace-video mt-6 min-h-[16rem]" data-replace="Video real requerido: recorrido de instalación o testimonio."><span class="placeholder-title">Placeholder video</span></div>
-          </article>
-          <article class="rounded-[2rem] bg-slate-50 p-7 ring-1 ring-slate-200">
-            <h3 class="text-2xl font-black text-brand-ink">Tips técnicos para SEO</h3>
-            <div class="mt-5 grid gap-3">
-              <a class="rounded-2xl bg-white p-4 font-bold text-slate-700 ring-1 ring-slate-200" href="#contacto">Cuándo conviene VRF vs. convencional</a>
-              <a class="rounded-2xl bg-white p-4 font-bold text-slate-700 ring-1 ring-slate-200" href="#contacto">Cómo saber si tu equipo necesita mantenimiento</a>
-              <a class="rounded-2xl bg-white p-4 font-bold text-slate-700 ring-1 ring-slate-200" href="#contacto">Qué es recuperación de calor</a>
-            </div>
-          </article>
         </div>
       </div>
     </section>
-
-    <section id="contacto" class="py-20 sm:py-24">
+ 
+    <!-- =====================================================================
+         CALCULADORA DE AHORRO  (Idea #1)
+         ===================================================================== -->
+    <section id="calculadora" class="scroll-mt-24 border-b border-slate-200 bg-slate-50 py-20 sm:py-24">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center">
+          <p class="eyebrow flex items-center justify-center gap-3 text-brand-coolDark"><span class="h-px w-10 bg-brand-cool"></span>Herramienta interactiva<span class="h-px w-10 bg-brand-cool"></span></p>
+          <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">Calculadora de ahorro para piscinas</h2>
+          <p class="mt-4 text-base leading-8 text-slate-600">Estima cuánto podrías ahorrar al año al calentar tu piscina con recuperación de calor.</p>
+        </div>
+ 
+        <div class="reveal mt-10 grid gap-0 overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-card lg:grid-cols-2">
+          <div class="p-7 sm:p-9">
+            <label class="block">
+              <span class="text-sm font-bold text-slate-800">Superficie de la piscina</span>
+              <div class="mt-2 flex items-center gap-4">
+                <input id="calc-area" type="range" min="10" max="200" value="40" class="w-full accent-brand-cool" />
+                <span class="w-20 shrink-0 rounded-lg bg-slate-100 px-2 py-1 text-center font-mono text-sm font-bold text-slate-800"><span id="calc-area-val">40</span> m²</span>
+              </div>
+            </label>
+ 
+            <label class="mt-6 block">
+              <span class="text-sm font-bold text-slate-800">¿Cómo calientas hoy?</span>
+              <select id="calc-system" class="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool">
+                <option value="gas">Calentador a gas</option>
+                <option value="electrico">Resistencia eléctrica</option>
+                <option value="ninguno">No la caliento (agua fría)</option>
+              </select>
+            </label>
+ 
+            <label class="mt-5 flex items-center gap-3 rounded-xl bg-slate-50 p-4">
+              <input id="calc-ac" type="checkbox" checked class="h-5 w-5 accent-brand-cool" />
+              <span class="text-sm font-semibold text-slate-700">Tengo equipo de A/C cerca de la piscina</span>
+            </label>
+          </div>
+ 
+          <div class="flex flex-col justify-center bg-brand-navy p-7 text-white sm:p-9">
+            <p class="font-mono text-xs uppercase tracking-wider text-brand-cool" id="calc-label">Ahorro anual estimado</p>
+            <p class="font-display mt-2 text-5xl font-extrabold" id="calc-result">$8,000</p>
+            <p class="mt-2 text-sm leading-7 text-slate-300" id="calc-note">Con recuperación de calor frente a tu sistema actual.</p>
+            <p class="mt-5 font-mono text-[11px] leading-5 text-slate-400">Estimación referencial. La cifra real depende de una evaluación técnica sin costo (volumen, horarios, equipo disponible).</p>
+            <a id="calc-cta" href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20us%C3%A9%20la%20calculadora%20de%20ahorro%20para%20mi%20piscina%20y%20quiero%20una%20evaluaci%C3%B3n." target="_blank" rel="noopener" class="mt-6 inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-500 px-5 py-3 text-sm font-black text-white transition hover:bg-emerald-600">Validar mi ahorro real</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- =====================================================================
+         PORTAFOLIO  (Brief 6 → 13 años de obra; tarjetas con placeholders)
+         ===================================================================== -->
+    <section id="portafolio" class="border-b border-slate-200 bg-white py-20 sm:py-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div class="reveal flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-3xl">
+            <p class="eyebrow flex items-center gap-3 text-brand-coolDark"><span class="text-slate-300">03</span><span class="h-px w-10 bg-brand-cool"></span>Portafolio</p>
+            <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">13 años de obra real</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">Antes de llamar, un cliente serio necesita ver obra. Esta es una muestra de proyectos. <span class="font-semibold text-slate-700">Las fotos y fichas técnicas se reemplazarán por material real.</span></p>
+          </div>
+          <a href="/portafolio/" class="inline-flex shrink-0 items-center gap-2 rounded-xl bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-slate-800">Ver portafolio completo →</a>
+        </div>
+ 
+        <!-- Brief 6.2 → formato de tarjeta: foto / nombre+tipo / sistema / resultado / año -->
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+ 
+          <!-- Proyecto card (repetible) -->
+          <article class="reveal group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <!-- 🔁 REEMPLAZAR foto del proyecto (sugerido 600×400 px) -->
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>Super Kosher</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-slate-400">Comercial</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">Super Kosher</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">A/C con chillers + ductería. Instalación comercial.</p>
+              <p class="mt-3 inline-block rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-[11px] font-bold text-slate-600">Chillers · Ductería</p>
+            </div>
+          </article>
+ 
+          <article class="reveal group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>Presidencia</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-slate-400">Institucional</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">Presidencia</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Proyecto institucional de climatización.</p>
+              <p class="mt-3 inline-block rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-[11px] font-bold text-slate-600">Climatización</p>
+            </div>
+          </article>
+ 
+          <article class="reveal group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>Iglesia Hosanna</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-slate-400">Gran aforo</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">Iglesia Hosanna</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Sistema de A/C para espacio de gran aforo.</p>
+              <p class="mt-3 inline-block rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-[11px] font-bold text-slate-600">A/C de gran capacidad</p>
+            </div>
+          </article>
+ 
+          <article class="reveal group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>Sea Point</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-slate-400">Residencial premium</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">Sea Point</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Climatización residencial de alto nivel.</p>
+              <p class="mt-3 inline-block rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-[11px] font-bold text-slate-600">Residencial</p>
+            </div>
+          </article>
+ 
+          <article class="reveal group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>Pacific Point Torre 400</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-slate-400">Residencial / Comercial</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">Pacific Point Torre 400</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Sistema VRF en edificio.</p>
+              <p class="mt-3 inline-block rounded-lg bg-brand-cool/10 px-2.5 py-1 font-mono text-[11px] font-bold text-brand-coolDark">VRF</p>
+            </div>
+          </article>
+ 
+          <article class="reveal group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>The Towers Punta Paitilla</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-slate-400">Complejo de torres</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">The Towers Punta Paitilla</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Instalación en complejo de torres.</p>
+              <p class="mt-3 inline-block rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-[11px] font-bold text-slate-600">Climatización</p>
+            </div>
+          </article>
+ 
+          <article class="reveal group overflow-hidden rounded-3xl border-2 border-brand-warm/40 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>PH Punta Roca</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-brand-warm">Recuperación de calor</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">PH Punta Roca</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Recuperación de calor para piscina del edificio.</p>
+              <p class="mt-3 inline-block rounded-lg bg-orange-100 px-2.5 py-1 font-mono text-[11px] font-bold text-orange-700">Ahorro $36,000/año</p>
+            </div>
+          </article>
+ 
+          <article class="reveal group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>PH Villa Marina</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-slate-400">Recuperación de calor</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">PH Villa Marina</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Recuperación de calor para piscina.</p>
+              <p class="mt-3 inline-block rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-[11px] font-bold text-slate-600">Recuperación de calor</p>
+            </div>
+          </article>
+ 
+          <article class="reveal group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <div class="ph min-h-[190px] rounded-none border-x-0 border-t-0"><small>Foto del proyecto</small><b>Pacific Point Torre 700</b></div>
+            <div class="p-6">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-slate-400">Recuperación de calor</p>
+              <h3 class="font-display mt-1 text-lg font-bold text-slate-950">Pacific Point Torre 700</h3>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Recuperación de calor para piscina.</p>
+              <p class="mt-3 inline-block rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-[11px] font-bold text-slate-600">Recuperación de calor</p>
+            </div>
+          </article>
+        </div>
+ 
+        <!-- IDEA #4 (Brief 10): galería antes / después -->
+        <div class="reveal mt-14">
+          <h3 class="font-display text-xl font-bold text-slate-950">Antes y después</h3>
+          <p class="mt-2 text-sm text-slate-600">Arrastra el control para ver la diferencia de una instalación profesional.</p>
+          <div class="ba-wrap mt-5 aspect-[16/8] max-w-3xl border border-slate-200">
+            <!-- 🔁 REEMPLAZAR: imagen ANTES (fondo) y DESPUÉS (.ba-after) — mismas dimensiones -->
+            <div class="ph absolute inset-0 rounded-none"><small>Antes</small><b>Foto "antes" de la instalación</b></div>
+            <div class="ba-after"><div class="ph absolute inset-0 rounded-none border-brand-cool" style="background:repeating-linear-gradient(45deg, rgba(57,187,209,.18), rgba(57,187,209,.18) 12px, rgba(226,232,240,.6) 12px, rgba(226,232,240,.6) 24px)"><small>Después</small><b>Foto "después" — sistema instalado</b></div></div>
+            <div class="ba-line" id="ba-line"></div>
+            <input class="ba-range" id="ba-range" type="range" min="0" max="100" value="50" aria-label="Comparar antes y después" />
+          </div>
+        </div>
+ 
+        <!-- IDEA #5 (Brief 10): video testimonial / recorrido -->
+        <div class="reveal mt-12 grid gap-6 lg:grid-cols-2 lg:items-center">
+          <div class="ph min-h-[260px]" style="cursor:pointer">
+            <!-- 🔁 REEMPLAZAR: <iframe>/<video> de 60s (recorrido de instalación / testimonial) -->
+            <small>Video 60s</small><b>▶ Recorrido de instalación / testimonial</b>
+          </div>
           <div>
-            <p class="section-kicker">Contacto</p>
-            <h2 class="mt-3 text-3xl font-black tracking-tight text-brand-ink sm:text-5xl">¿Tienes un proyecto o un sistema que no puede fallar?</h2>
-            <p class="mt-5 text-lg leading-8 text-slate-700">Escríbenos por WhatsApp con el mensaje prellenado o deja tu email opcional para recibir información técnica detallada por correo.</p>
-            <div class="mt-8 grid gap-4">
-              <a class="rounded-3xl bg-brand-ink p-5 text-white shadow-card" href="https://wa.me/50761095573?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20Aire%20Proyectos%20Panam%C3%A1." target="_blank" rel="noopener"><span class="block text-sm font-bold uppercase tracking-wide text-brand-cyan">Conversión principal</span><span class="mt-1 block text-2xl font-black">WhatsApp +507 6109-5573</span></a>
-              <a class="rounded-3xl bg-white p-5 shadow-card ring-1 ring-slate-200" href="tel:+5073816530"><span class="block text-sm font-bold uppercase tracking-wide text-brand-blue">Teléfono</span><span class="mt-1 block text-2xl font-black text-brand-ink">+507 381-6530</span></a>
+            <p class="eyebrow text-brand-coolDark">Video</p>
+            <h3 class="font-display mt-3 text-2xl font-bold text-slate-950">Una instalación real, en 60 segundos</h3>
+            <p class="mt-3 text-base leading-8 text-slate-600">Sala de máquinas, equipo en funcionamiento y cliente satisfecho. Es el contenido que más convierte — y ningún competidor local lo tiene.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- =====================================================================
+         TESTIMONIOS  (se conservan los 3 + espacio para testimonio de casa privada)
+         ===================================================================== -->
+    <section class="border-b border-slate-200 bg-slate-100 py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <p class="eyebrow flex items-center justify-center gap-3 text-brand-coolDark"><span class="h-px w-10 bg-brand-cool"></span>Casos de éxito<span class="h-px w-10 bg-brand-cool"></span></p>
+          <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">Lo que dicen nuestros clientes</h2>
+        </div>
+        <div class="reveal mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-card">
+            <p class="font-display text-5xl leading-none text-slate-200">“</p>
+            <blockquote class="mt-2 text-sm leading-7 text-slate-700">Estamos encantados con el nuevo Sistema de Recuperación de Calor en la piscina del PH. La temperatura del agua es mucho más agradable y el sistema funciona bien. Todo el edificio está encantado con los resultados.</blockquote>
+            <p class="font-display mt-5 text-lg font-bold text-slate-950">Pacific Point Torre 700</p>
+          </article>
+          <article class="rounded-3xl border border-slate-200 bg-white p-8 shadow-card">
+            <p class="font-display text-5xl leading-none text-slate-200">“</p>
+            <blockquote class="mt-2 text-sm leading-7 text-slate-700">El sistema ha funcionado de forma eficiente y ha cumplido todos nuestros requisitos, con muy buenos comentarios sobre la temperatura del agua. Ha sido prácticamente libre de mantenimiento.</blockquote>
+            <p class="font-display mt-5 text-lg font-bold text-slate-950">PH Villa Marina</p>
+          </article>
+          <article class="rounded-3xl border-2 border-brand-warm/40 bg-white p-8 shadow-card">
+            <p class="font-display text-5xl leading-none text-orange-200">“</p>
+            <blockquote class="mt-2 text-sm leading-7 text-slate-700">Calentamos la piscina usando el A/C del lobby. Ahorramos aproximadamente <span class="font-bold text-slate-900">$36,000 al año</span> frente al sistema de gas original. El sistema es excelente, el servicio oportuno, y recomendamos totalmente a Aire Proyectos Panamá.</blockquote>
+            <p class="font-display mt-5 text-lg font-bold text-slate-950">PH Punta Roca</p>
+          </article>
+        </div>
+        <!-- Brief 3.2 → placeholder para testimonio de cliente privado (casa) -->
+        <div class="reveal mt-6 rounded-3xl border-2 border-dashed border-slate-300 bg-white/60 p-6 text-center">
+          <p class="font-mono text-xs uppercase tracking-wider text-slate-400">Espacio reservado</p>
+          <p class="mt-1 text-sm font-semibold text-slate-600">🔁 Aquí irá el testimonio de un cliente privado (casa, no edificio) — pendiente de envío.</p>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- =====================================================================
+         MANTENIMIENTO Y CONTRATOS  (Brief 8 → sección nueva)
+         ===================================================================== -->
+    <section id="mantenimiento" class="border-b border-slate-200 bg-brand-navy py-20 text-white sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-12 lg:grid-cols-12 lg:items-start">
+          <div class="reveal lg:col-span-5">
+            <p class="eyebrow flex items-center gap-3 text-brand-warm"><span class="text-slate-600">04</span><span class="h-px w-10 bg-brand-warm"></span>Mantenimiento</p>
+            <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight sm:text-5xl">No desaparecemos después de instalar</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-300">Contratos de mantenimiento preventivo para que tus equipos no fallen cuando más los necesitas. Conocemos lo que instalamos: cómo está y cuándo revisarlo.</p>
+            <div class="mt-7 flex flex-col gap-3">
+              <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20quiero%20cotizar%20un%20contrato%20de%20mantenimiento." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-warm px-5 py-3.5 text-sm font-black text-white transition hover:bg-brand-warmDark">Cotizar contrato de mantenimiento</a>
+              <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%2C%20ya%20instal%C3%A9%20con%20ustedes%20y%20quiero%20programar%20mi%20primera%20visita%20preventiva." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 px-5 py-3.5 text-sm font-black text-white transition hover:bg-white/10">¿Ya instalaste con nosotros? Programa tu visita</a>
+              <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%2C%20tengo%20equipo%20de%20otra%20empresa%20y%20quiero%20continuidad%20de%20servicio." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 bg-white/5 px-5 py-3.5 text-sm font-black text-white transition hover:bg-white/10">¿Equipo de otra empresa? Te damos continuidad</a>
             </div>
           </div>
-          <form id="lead-form" class="rounded-[2rem] bg-white p-6 shadow-soft ring-1 ring-slate-200 sm:p-8">
+          <div class="reveal grid gap-5 sm:grid-cols-2 lg:col-span-7">
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6"><span class="text-2xl">🗓️</span><h3 class="font-display mt-3 text-lg font-bold">Contratos anuales</h3><p class="mt-2 text-sm leading-7 text-slate-300">Visitas programadas y tiempos de respuesta definidos.</p></div>
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6"><span class="text-2xl">🛠️</span><h3 class="font-display mt-3 text-lg font-bold">Preventivo + correctivo</h3><p class="mt-2 text-sm leading-7 text-slate-300">Para todos los sistemas que instalamos — y también de terceros.</p></div>
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6"><span class="text-2xl">📋</span><h3 class="font-display mt-3 text-lg font-bold">Historial de cada equipo</h3><p class="mt-2 text-sm leading-7 text-slate-300">Sabemos qué instalamos, cómo está y cuándo revisarlo.</p></div>
+            <div class="rounded-3xl border border-white/10 bg-white/5 p-6"><span class="text-2xl">🏢</span><h3 class="font-display mt-3 text-lg font-bold">Ideal para operaciones críticas</h3><p class="mt-2 text-sm leading-7 text-slate-300">PHs, edificios de oficinas y operaciones que no pueden parar.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- =====================================================================
+         EMPRESA  (Brief 7.2 → trayectoria, credenciales) + IDEA #6 marcas + IDEA #7 auditoría
+         ===================================================================== -->
+    <section id="empresa" class="border-b border-slate-200 bg-white py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal grid gap-10 lg:grid-cols-12 lg:items-center">
+          <div class="lg:col-span-6">
+            <p class="eyebrow flex items-center gap-3 text-brand-coolDark"><span class="text-slate-300">05</span><span class="h-px w-10 bg-brand-cool"></span>Empresa</p>
+            <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">13 años sin improvisar. Desde 2012.</h2>
+            <p class="mt-5 text-lg leading-8 text-slate-600">Aire Proyectos Panamá es una empresa de ingeniería y climatización de servicio completo. Diseñamos, instalamos, mantenemos y reparamos — con equipo propio, sin subcontratar la instalación.</p>
+            <div class="mt-7 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-slate-50 p-4"><p class="font-display text-2xl font-extrabold text-slate-950">13 años</p><p class="text-sm font-semibold text-slate-500">operando desde 2012</p></div>
+              <div class="rounded-2xl bg-slate-50 p-4"><p class="font-display text-2xl font-extrabold text-slate-950">Equipo propio</p><p class="text-sm font-semibold text-slate-500">no subcontratamos</p></div>
+              <div class="rounded-2xl bg-slate-50 p-4"><p class="font-display text-2xl font-extrabold text-slate-950">4 segmentos</p><p class="text-sm font-semibold text-slate-500">comercial · industrial · residencial premium · institucional</p></div>
+              <div class="rounded-2xl bg-slate-50 p-4"><p class="font-display text-2xl font-extrabold text-slate-950">Cobertura</p><p class="text-sm font-semibold text-slate-500">Ciudad de Panamá + otras regiones</p></div>
+            </div>
+          </div>
+          <!-- IDEA #7 (Brief 10): auditoría energética como servicio de entrada -->
+          <div class="reveal lg:col-span-6">
+            <div class="rounded-[2rem] border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 shadow-card">
+              <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-accent/30 text-2xl">📊</span>
+              <h3 class="font-display mt-4 text-2xl font-bold text-slate-950">Auditoría energética</h3>
+              <p class="mt-3 text-base leading-8 text-slate-600">Empieza por saber cuánto estás gastando de más. Una evaluación energética como primer paso — claridad para ti, y la solución correcta de nuestra parte.</p>
+              <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20me%20interesa%20una%20auditor%C3%ADa%20energ%C3%A9tica." target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 rounded-xl bg-slate-950 px-5 py-3 text-sm font-black text-white transition hover:bg-slate-800">Solicitar auditoría energética</a>
+            </div>
+          </div>
+        </div>
+ 
+        <!-- IDEA #6 (Brief 10): pared de marcas autorizadas -->
+        <div class="reveal mt-16">
+          <p class="text-center font-mono text-xs uppercase tracking-wider text-slate-400">Trabajamos e instalamos cualquier marca · representantes y marcas autorizadas</p>
+          <!-- 🔁 REEMPLAZAR cada recuadro por el logo real de la marca (Raymond enviará la lista oficial) -->
+          <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            <div class="logo-ph h-20">LOGO<br>Daikin</div>
+            <div class="logo-ph h-20">LOGO<br>Mitsubishi</div>
+            <div class="logo-ph h-20">LOGO<br>LG</div>
+            <div class="logo-ph h-20">LOGO<br>Carrier</div>
+            <div class="logo-ph h-20">LOGO<br>Durkeesox</div>
+            <div class="logo-ph h-20">LOGO<br>SmartMist</div>
+          </div>
+          <p class="mt-3 text-center font-mono text-[11px] text-slate-400">Lista de marcas a confirmar por el cliente.</p>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- =====================================================================
+         BLOG / TIPS  (Idea #9) — teaser
+         ===================================================================== -->
+    <section class="border-b border-slate-200 bg-slate-50 py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <p class="eyebrow flex items-center gap-3 text-brand-coolDark"><span class="h-px w-10 bg-brand-cool"></span>Recursos</p>
+            <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">Tips técnicos</h2>
+            <p class="mt-4 text-base leading-8 text-slate-600">Contenido que posiciona a Aire Proyectos como referencia del sector y mejora el SEO de forma orgánica.</p>
+          </div>
+          <a href="/blog/" class="inline-flex shrink-0 items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-black text-slate-800 transition hover:border-brand-cool hover:text-brand-coolDark">Ver el blog →</a>
+        </div>
+        <div class="reveal mt-10 grid gap-6 md:grid-cols-3">
+          <a href="/blog/" class="group rounded-3xl border border-slate-200 bg-white p-7 shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <p class="font-mono text-xs uppercase tracking-wider text-slate-400">Guía</p>
+            <h3 class="font-display mt-2 text-lg font-bold text-slate-950 group-hover:text-brand-coolDark">¿Cuándo conviene VRF vs. convencional?</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Cómo decidir el sistema correcto según el tipo de edificio o residencia.</p>
+          </a>
+          <a href="/blog/" class="group rounded-3xl border border-slate-200 bg-white p-7 shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <p class="font-mono text-xs uppercase tracking-wider text-slate-400">Mantenimiento</p>
+            <h3 class="font-display mt-2 text-lg font-bold text-slate-950 group-hover:text-brand-coolDark">Cómo saber si tu equipo necesita servicio</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Señales tempranas antes de una falla costosa.</p>
+          </a>
+          <a href="/blog/" class="group rounded-3xl border border-slate-200 bg-white p-7 shadow-card transition hover:-translate-y-1 hover:shadow-soft">
+            <p class="font-mono text-xs uppercase tracking-wider text-slate-400">Explicación</p>
+            <h3 class="font-display mt-2 text-lg font-bold text-slate-950 group-hover:text-brand-coolDark">¿Qué es recuperación de calor?</h3>
+            <p class="mt-3 text-sm leading-7 text-slate-600">Cómo calentar una piscina aprovechando el A/C que ya tienes.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- =====================================================================
+         FAQ  (actualizado — sin finca/mosquitos)
+         ===================================================================== -->
+    <section id="faq" class="border-b border-slate-200 bg-white py-20 sm:py-24">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal text-center">
+          <p class="eyebrow flex items-center justify-center gap-3 text-brand-coolDark"><span class="h-px w-10 bg-brand-cool"></span>Preguntas frecuentes<span class="h-px w-10 bg-brand-cool"></span></p>
+          <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl">Dudas comunes antes de cotizar</h2>
+        </div>
+        <div class="reveal mt-10 grid gap-4">
+          <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-bold text-slate-950">¿Qué tipo de proyectos atiende Aire Proyectos?<span class="faq-icon text-brand-cool transition-transform">＋</span></summary>
+            <p class="mt-4 text-sm leading-7 text-slate-600">Diseño e ingeniería HVAC, climatización de todos los tipos (incluyendo VRF, chillers y heat pumps), ductería, recuperación de calor para piscinas, mantenimiento y reparación, limpieza y desinfección de ductos, SmartMist, Durkeesox, misting exterior y control de olores industriales. Comercial, industrial y residencial.</p>
+          </details>
+          <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-bold text-slate-950">¿Trabajan solo con una marca de equipos?<span class="faq-icon text-brand-cool transition-transform">＋</span></summary>
+            <p class="mt-4 text-sm leading-7 text-slate-600">No. No estamos atados a ningún fabricante: vendemos e instalamos cualquier marca según lo que mejor se adapte al proyecto y al presupuesto.</p>
+          </details>
+          <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-bold text-slate-950">¿Cómo sé si la recuperación de calor aplica a mi piscina?<span class="faq-icon text-brand-cool transition-transform">＋</span></summary>
+            <p class="mt-4 text-sm leading-7 text-slate-600">Revisamos volumen de agua, sistema actual, equipos de A/C cercanos, horarios de uso y temperatura deseada. Aplica tanto a edificios como a casas con equipo de A/C cercano. La evaluación técnica es sin costo.</p>
+          </details>
+          <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-bold text-slate-950">¿Dan mantenimiento a equipos que no instalaron ustedes?<span class="faq-icon text-brand-cool transition-transform">＋</span></summary>
+            <p class="mt-4 text-sm leading-7 text-slate-600">Sí. Hacemos mantenimiento preventivo, correctivo y reparación de cualquier sistema HVAC y de refrigeración, sin importar la marca ni quién hizo la instalación original.</p>
+          </details>
+          <details class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-bold text-slate-950">¿Trabajan fuera de Ciudad de Panamá?<span class="faq-icon text-brand-cool transition-transform">＋</span></summary>
+            <p class="mt-4 text-sm leading-7 text-slate-600">Nuestra base está en Ciudad de Panamá, con capacidad para atender otras regiones según el tipo y alcance del proyecto.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- =====================================================================
+         CONTACTO + CAPTURA DE LEADS  (Brief 9 → email opcional + WhatsApp intacto)
+         ===================================================================== -->
+    <section id="contacto" class="bg-brand-deep py-20 text-white sm:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+        <div class="reveal lg:col-span-5">
+          <p class="eyebrow flex items-center gap-3 text-brand-accent"><span class="text-slate-600">06</span><span class="h-px w-10 bg-brand-accent"></span>Contacto</p>
+          <h2 class="font-display mt-4 text-3xl font-extrabold tracking-tight sm:text-5xl">Cuéntanos qué necesitas resolver</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-300">Completa los datos y se abrirá WhatsApp con un mensaje listo para enviar. Respondemos en menos de 2 horas en horario laboral.</p>
+ 
+          <!-- Brief 9 → incentivo para dejar email (captura de leads) -->
+          <div class="mt-7 rounded-2xl border border-white/10 bg-white/5 p-5">
+            <p class="font-display text-base font-bold text-white">¿Aún no estás listo para hablar?</p>
+            <p class="mt-1 text-sm leading-7 text-slate-300">Déjanos tu correo y te enviamos información técnica detallada. Sin compromiso.</p>
+          </div>
+ 
+          <div class="mt-7 space-y-3 text-sm leading-7 text-slate-300">
+            <p><strong class="text-white">WhatsApp:</strong> +507 6109-5573</p>
+            <p><strong class="text-white">Teléfono:</strong> +507 381-6530</p>
+            <p><strong class="text-white">Dirección:</strong> Calle Manuel Ma. Icaza, Edificio Delesseps, Piso 9, Área Bancaria, Panamá.</p>
+          </div>
+        </div>
+ 
+        <div class="reveal lg:col-span-7">
+          <form id="contact-form" action="https://api.whatsapp.com/send" method="get" target="_blank" class="rounded-[2rem] border border-white/10 bg-white p-6 text-slate-950 shadow-soft sm:p-8" onsubmit="return prepareWhatsAppSubmit()">
+            <input type="hidden" name="phone" value="50761095573" />
+            <input id="whatsapp-text" type="hidden" name="text" value="" />
+ 
             <div class="grid gap-5 sm:grid-cols-2">
-              <label class="grid gap-2 text-sm font-bold text-slate-700">Nombre
-                <input class="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-brand-blue" type="text" name="name" required placeholder="Tu nombre" />
-              </label>
-              <label class="grid gap-2 text-sm font-bold text-slate-700">Teléfono
-                <input class="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-brand-blue" type="tel" name="phone" required placeholder="+507..." />
-              </label>
-              <label class="grid gap-2 text-sm font-bold text-slate-700 sm:col-span-2">Email opcional
-                <input class="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-brand-blue" type="email" name="email" placeholder="Para enviarte información técnica detallada" />
-              </label>
-              <label class="grid gap-2 text-sm font-bold text-slate-700 sm:col-span-2">Tipo de proyecto
-                <select class="rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-brand-blue" name="project">
-                  <option>PH / edificio residencial</option>
-                  <option>Residencia privada</option>
-                  <option>Comercial</option>
+              <div>
+                <label for="contact-name" class="block font-mono text-xs font-bold uppercase tracking-wider text-slate-500">Nombre</label>
+                <input id="contact-name" required type="text" autocomplete="name" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool" placeholder="Tu nombre" />
+              </div>
+              <div>
+                <label for="contact-phone" class="block font-mono text-xs font-bold uppercase tracking-wider text-slate-500">WhatsApp de contacto</label>
+                <input id="contact-phone" required type="tel" autocomplete="tel" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool" placeholder="+507 6000-0000" />
+              </div>
+              <!-- Brief 9 → campo de email opcional para captura de leads -->
+              <div>
+                <label for="contact-email" class="block font-mono text-xs font-bold uppercase tracking-wider text-slate-500">Email (opcional · te enviamos info técnica)</label>
+                <input id="contact-email" type="email" autocomplete="email" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool" placeholder="correo@empresa.com" />
+              </div>
+              <div>
+                <label for="contact-area" class="block font-mono text-xs font-bold uppercase tracking-wider text-slate-500">Tipo de cliente</label>
+                <!-- Brief 1.1 → sin opción "Finca" -->
+                <select id="contact-area" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool">
+                  <option>Comercial / PH / Empresa</option>
                   <option>Industrial</option>
+                  <option>Residencial / Casa</option>
                   <option>Institucional</option>
-                  <option>Mantenimiento preventivo</option>
-                  <option>Reparación HVAC</option>
-                  <option>Piscina</option>
-                  <option>Limpieza y desinfección de ductos</option>
-                  <option>SmartMist</option>
                 </select>
-              </label>
-              <label class="grid gap-2 text-sm font-bold text-slate-700 sm:col-span-2">Mensaje
-                <textarea class="min-h-32 rounded-2xl border border-slate-300 px-4 py-3 outline-none focus:border-brand-blue" name="message" placeholder="Cuéntanos qué necesitas resolver"></textarea>
-              </label>
+              </div>
+              <div>
+                <label for="contact-service" class="block font-mono text-xs font-bold uppercase tracking-wider text-slate-500">Interés principal</label>
+                <!-- Brief 1.2 → sin "control de mosquitos" -->
+                <select id="contact-service" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool">
+                  <option>Aire acondicionado / climatización</option>
+                  <option>Sistemas VRF</option>
+                  <option>Recuperación de calor para piscina</option>
+                  <option>Heat pump / calentador de piscina</option>
+                  <option>Ductería (metálica / P3 / Durkeesox)</option>
+                  <option>SmartMist (ahorro de energía)</option>
+                  <option>Misting para espacios exteriores</option>
+                  <option>Limpieza y desinfección de ductos</option>
+                  <option>Mantenimiento / contrato de servicio</option>
+                  <option>Control de olores industriales</option>
+                  <option>Auditoría energética</option>
+                  <option>No estoy seguro, necesito orientación</option>
+                </select>
+              </div>
+              <div>
+                <label for="contact-location" class="block font-mono text-xs font-bold uppercase tracking-wider text-slate-500">Ubicación</label>
+                <input id="contact-location" type="text" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool" placeholder="Ciudad, corregimiento o zona" />
+              </div>
             </div>
-            <div class="mt-5 rounded-2xl bg-brand-soft p-4 text-sm leading-6 text-brand-navy">
-              Deja tu email si quieres recibir información técnica detallada por correo. El flujo principal a WhatsApp se mantiene.
+ 
+            <div class="mt-5">
+              <label for="contact-project" class="block font-mono text-xs font-bold uppercase tracking-wider text-slate-500">PH / Empresa / Residencia</label>
+              <input id="contact-project" type="text" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool" placeholder="Nombre del proyecto o referencia" />
             </div>
-            <button class="mt-6 w-full rounded-full bg-brand-orange px-7 py-4 text-base font-black text-white shadow-card transition hover:bg-orange-600" type="submit">Enviar por WhatsApp</button>
+ 
+            <div class="mt-5">
+              <label for="contact-message" class="block font-mono text-xs font-bold uppercase tracking-wider text-slate-500">Detalles útiles</label>
+              <textarea id="contact-message" rows="4" class="mt-2 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold outline-none focus:border-brand-cool" placeholder="Sistema actual, tamaño aproximado, problema principal, horarios de uso, fotos disponibles..."></textarea>
+            </div>
+ 
+            <div class="mt-6 grid gap-3 sm:grid-cols-2">
+              <button type="submit" class="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-emerald-500 px-6 py-4 text-sm font-black text-white shadow-lg shadow-emerald-500/20 transition hover:bg-emerald-600">Enviar por WhatsApp</button>
+              <a id="whatsapp-preview-link" href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%20Panam%C3%A1%2C%20quiero%20orientaci%C3%B3n%20sobre%20una%20soluci%C3%B3n." target="_blank" rel="noopener" class="inline-flex w-full items-center justify-center rounded-2xl border border-slate-300 px-6 py-4 text-sm font-black text-slate-800 transition hover:border-emerald-500 hover:text-emerald-600">Abrir enlace preparado</a>
+            </div>
+            <p class="mt-4 text-center font-mono text-[11px] leading-5 text-slate-500">El mensaje se genera con la información del formulario para que lo revises antes de enviarlo. Si dejaste tu email, lo guardamos para enviarte información técnica.</p>
           </form>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="bg-brand-ink py-12 text-white">
-    <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_1fr_1fr] lg:px-8">
-      <div>
-        <div class="replace-logo bg-white text-brand-ink" data-replace="Reemplazar por logo de footer: assets/logo-aire-proyectos-blanco.svg"><span class="placeholder-title">Aire Proyectos Panamá<br><span class="text-xs font-semibold normal-case tracking-normal text-slate-500">Logo footer</span></span></div>
-        <p class="mt-5 max-w-sm text-white/70">Ingeniería, instalación, mantenimiento y reparación HVAC para proyectos comerciales, industriales, institucionales y residenciales premium.</p>
+ 
+  <!-- =====================================================================
+       FOOTER  (actualizado — sin finca/mosquitos)
+       ===================================================================== -->
+  <footer class="bg-brand-deep py-12 text-sm text-slate-400">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+      <div class="lg:col-span-5">
+        <!-- 🔁 REEMPLAZAR LOGO (versión clara para fondo oscuro, sugerido 240×64 px) -->
+        <div class="logo-ph h-16 w-[220px] !border-white/20 !bg-white/5 !text-slate-300">LOGO AIRE PROYECTOS<br>(versión clara)</div>
+        <p class="mt-5 max-w-md leading-7">Ingeniería y climatización HVAC en Panamá: diseño, instalación, mantenimiento y reparación. VRF, recuperación de calor, ductería, SmartMist, Durkeesox y control de olores industriales.</p>
+        <p class="mt-4 font-mono text-xs uppercase tracking-wider text-slate-500">Comercial · Industrial · Residencial · Institucional · desde 2012</p>
       </div>
-      <div>
-        <h3 class="font-black">Servicios principales</h3>
-        <ul class="mt-4 grid gap-2 text-white/70">
-          <li>Diseño e ingeniería HVAC</li>
-          <li>Sistemas VRF</li>
-          <li>Recuperación de calor para piscinas</li>
-          <li>Mantenimiento y reparación</li>
-          <li>Limpieza y desinfección de ductos</li>
-        </ul>
+      <div class="grid grid-cols-2 gap-3 lg:col-span-4">
+        <a href="#servicios" class="font-bold transition hover:text-brand-cool">Servicios</a>
+        <a href="#productos" class="font-bold transition hover:text-brand-cool">Productos y tecnologías</a>
+        <a href="#portafolio" class="font-bold transition hover:text-brand-cool">Portafolio</a>
+        <a href="#mantenimiento" class="font-bold transition hover:text-brand-cool">Mantenimiento</a>
+        <a href="#empresa" class="font-bold transition hover:text-brand-cool">Empresa</a>
+        <a href="#contacto" class="font-bold transition hover:text-brand-cool">Contacto</a>
       </div>
-      <div>
-        <h3 class="font-black">Contacto</h3>
-        <ul class="mt-4 grid gap-2 text-white/70">
-          <li>Raymond Nahmad</li>
-          <li><a class="hover:text-brand-cyan" href="https://wa.me/50761095573?text=Hola%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para%20Aire%20Proyectos%20Panam%C3%A1." target="_blank" rel="noopener">WhatsApp: +507 6109-5573</a></li>
-          <li><a class="hover:text-brand-cyan" href="tel:+5073816530">Tel: +507 381-6530</a></li>
-          <li>Ciudad de Panamá</li>
-        </ul>
+      <div class="lg:col-span-3">
+        <p class="font-bold text-white">Contacto</p>
+        <p class="mt-3 leading-7">WhatsApp: +507 6109-5573<br>Tel: +507 381-6530<br>Área Bancaria, Ciudad de Panamá</p>
       </div>
     </div>
-    <div class="mx-auto mt-10 max-w-7xl border-t border-white/10 px-4 pt-6 text-sm text-white/50 sm:px-6 lg:px-8">© 2025 Aire Proyectos Panamá. Todos los derechos reservados.</div>
+    <div class="mx-auto mt-10 max-w-7xl border-t border-white/10 px-4 pt-6 sm:px-6 lg:px-8">
+      <p class="font-mono text-xs text-slate-500">© <span id="year"></span> Aire Proyectos Panamá. Todos los derechos reservados.</p>
+    </div>
   </footer>
-
+ 
+  <!-- IDEA #8 (Brief 10): WhatsApp flotante con mensaje pre-escrito -->
+  <a href="https://api.whatsapp.com/send?phone=50761095573&text=Hola%20Aire%20Proyectos%2C%20me%20interesa%20una%20cotizaci%C3%B3n%20para..." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp" class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 text-white shadow-2xl shadow-emerald-500/30 transition hover:scale-105 hover:bg-emerald-600">
+    <svg class="h-7 w-7 fill-current" viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.735 1.03 3.39 1.647 5.392 1.648 5.47 0 9.92-4.447 9.923-9.917A9.86 9.86 0 0019.06 4.91 9.86 9.86 0 0012.05 2c-5.473 0-9.922 4.447-9.925 9.923a9.87 9.87 0 001.58 5.36l-.999 3.648 3.948-1.038zm11.387-5.57c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.099-.198.05-.372-.025-.52-.074-.149-.669-1.611-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.214 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.626.711.226 1.358.194 1.87.118.57-.085 1.758-.718 2.006-1.413.248-.694.248-1.29.173-1.413z"/></svg>
+  </a>
+ 
   <script>
-    const mobileButton = document.querySelector('.mobile-menu-button');
-    const mobilePanel = document.querySelector('#mobile-panel');
-    if (mobileButton && mobilePanel) {
-      mobileButton.addEventListener('click', () => {
-        const isOpen = mobilePanel.classList.toggle('open');
-        mobileButton.setAttribute('aria-expanded', String(isOpen));
+    /* ---------- Año ---------- */
+    document.getElementById('year').textContent = new Date().getFullYear();
+ 
+    /* ---------- Menú móvil ---------- */
+    const menuButton = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuButton.setAttribute('aria-expanded', String(!isHidden));
       });
-      mobilePanel.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-        mobilePanel.classList.remove('open');
-        mobileButton.setAttribute('aria-expanded', 'false');
-      }));
+      mobileMenu.querySelectorAll('a').forEach((link) =>
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuButton.setAttribute('aria-expanded', 'false');
+        })
+      );
     }
-
-    const counters = document.querySelectorAll('.counter');
-    const runCounter = (counter) => {
-      const target = Number(counter.dataset.target || '0');
-      let current = 0;
-      const step = Math.max(1, Math.ceil(target / 45));
-      const timer = setInterval(() => {
-        current += step;
-        if (current >= target) {
-          counter.textContent = target + (target >= 100 ? '+' : '');
-          clearInterval(timer);
-        } else {
-          counter.textContent = current;
-        }
-      }, 28);
-    };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && !entry.target.dataset.done) {
-          entry.target.dataset.done = 'true';
-          runCounter(entry.target);
-        }
+ 
+    /* ---------- Reveal on scroll ---------- */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); revealObserver.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+ 
+    /* ---------- Contadores animados ---------- */
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        const el = e.target, target = +el.dataset.target;
+        let cur = 0; const step = Math.max(1, Math.round(target / 45));
+        const tick = () => { cur += step; if (cur >= target) { el.textContent = target; } else { el.textContent = cur; requestAnimationFrame(tick); } };
+        tick(); counterObserver.unobserve(el);
       });
     }, { threshold: 0.5 });
-    counters.forEach((counter) => observer.observe(counter));
-
-    const calculator = document.querySelector('#pool-calculator');
-    const result = document.querySelector('#pool-result');
-    if (calculator && result) {
-      calculator.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const data = new FormData(calculator);
-        const area = Number(data.get('area') || 0);
-        const monthly = Number(data.get('cost') || 0);
-        const nearby = data.get('nearby') === 'yes';
-        const annual = monthly * 12;
-        const low = Math.round(annual * (nearby ? 0.45 : 0.18));
-        const high = Math.round(annual * (nearby ? 0.85 : 0.35));
-        const recommendation = nearby
-          ? 'La primera opción a evaluar es recuperación de calor, porque hay A/C cercano a la piscina.'
-          : 'Conviene evaluar heat pump dedicado o calentador a gas según capacidad, uso y velocidad de calentamiento requerida.';
-        result.innerHTML = `<strong>Recomendación preliminar:</strong> ${recommendation}<br><br><strong>Tamaño reportado:</strong> ${area} m².<br><strong>Rango orientativo de ahorro anual:</strong> $${low.toLocaleString()} - $${high.toLocaleString()} si el gasto mensual indicado refleja el costo actual de calentamiento. <br><br><a class="font-black text-brand-blue" target="_blank" rel="noopener" href="https://wa.me/50761095573?text=Hola%2C%20quiero%20validar%20la%20calculadora%20de%20ahorro%20para%20mi%20piscina.">Validar con una evaluación técnica →</a>`;
-      });
+    document.querySelectorAll('.counter').forEach((el) => counterObserver.observe(el));
+ 
+    /* ---------- Antes / Después ---------- */
+    const baRange = document.getElementById('ba-range');
+    if (baRange) {
+      const after = document.querySelector('.ba-after');
+      const line = document.getElementById('ba-line');
+      const update = (v) => { after.style.clipPath = `inset(0 0 0 ${v}%)`; line.style.left = v + '%'; };
+      baRange.addEventListener('input', (e) => update(e.target.value));
+      update(baRange.value);
     }
-
-    const leadForm = document.querySelector('#lead-form');
-    if (leadForm) {
-      leadForm.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const data = new FormData(leadForm);
-        const name = data.get('name') || '';
-        const phone = data.get('phone') || '';
-        const email = data.get('email') || '';
-        const project = data.get('project') || '';
-        const message = data.get('message') || '';
-        const text = `Hola, me interesa una cotización para Aire Proyectos Panamá.%0A%0ANombre: ${encodeURIComponent(name)}%0ATeléfono: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email || 'No indicado')}%0ATipo de proyecto: ${encodeURIComponent(project)}%0AMensaje: ${encodeURIComponent(message)}`;
-        window.open(`https://wa.me/50761095573?text=${text}`, '_blank', 'noopener');
-      });
+ 
+    /* ---------- Calculadora de ahorro (estimación referencial) ---------- */
+    (function () {
+      const area = document.getElementById('calc-area');
+      const areaVal = document.getElementById('calc-area-val');
+      const sys = document.getElementById('calc-system');
+      const ac = document.getElementById('calc-ac');
+      const result = document.getElementById('calc-result');
+      const note = document.getElementById('calc-note');
+      const label = document.getElementById('calc-label');
+      if (!area) return;
+ 
+      // Factores referenciales de costo anual de calentamiento por m² (USD)
+      const COST = { gas: 200, electrico: 260, ninguno: 0 };
+ 
+      function calc() {
+        const m2 = +area.value;
+        areaVal.textContent = m2;
+        const sysVal = sys.value;
+        const annualCost = m2 * COST[sysVal];
+ 
+        if (sysVal === 'ninguno') {
+          label.textContent = 'Beneficio principal';
+          result.textContent = 'Confort';
+          note.textContent = ac.checked
+            ? 'Con A/C cercano puedes climatizar tu piscina prácticamente sin costo eléctrico adicional usando recuperación de calor.'
+            : 'Te recomendaríamos un heat pump dedicado para lograr una temperatura agradable con bajo consumo.';
+          return;
+        }
+ 
+        // Recuperación de calor con A/C cercano: ahorro ~85-95% del costo actual.
+        // Sin A/C cercano: heat pump, ahorro ~60-70% vs gas/eléctrico.
+        const low = ac.checked ? annualCost * 0.85 : annualCost * 0.60;
+        const high = ac.checked ? annualCost * 0.95 : annualCost * 0.72;
+        const round = (n) => (Math.round(n / 100) * 100).toLocaleString('en-US');
+ 
+        label.textContent = 'Ahorro anual estimado';
+        result.textContent = '$' + round(low) + ' – $' + round(high);
+        note.textContent = ac.checked
+          ? 'Con recuperación de calor, aprovechando el A/C que ya tienes cerca de la piscina.'
+          : 'Con un heat pump dedicado frente a tu sistema actual (sin A/C cercano).';
+      }
+      [area, sys, ac].forEach((el) => { el.addEventListener('input', calc); el.addEventListener('change', calc); });
+      calc();
+    })();
+ 
+    /* ---------- WhatsApp: construir mensaje desde el formulario (flujo intacto) ---------- */
+    const WHATSAPP_API_BASE = 'https://api.whatsapp.com/send?';
+    const WHATSAPP_PHONE = '50761095573';
+    const getValue = (id) => { const f = document.getElementById(id); return f ? f.value.trim() : ''; };
+ 
+    function buildWhatsAppMessage() {
+      const lines = [
+        'Hola Aire Proyectos Panamá, me interesa una cotización.',
+        '',
+        `Nombre: ${getValue('contact-name') || 'No indicado'}`,
+        `WhatsApp: ${getValue('contact-phone') || 'No indicado'}`,
+        `Email: ${getValue('contact-email') || 'No indicado'}`,
+        `Tipo de cliente: ${getValue('contact-area') || 'No indicado'}`,
+        `Interés principal: ${getValue('contact-service') || 'No indicado'}`,
+        `Ubicación: ${getValue('contact-location') || 'No indicada'}`,
+        `Proyecto / referencia: ${getValue('contact-project') || 'No indicado'}`,
+        '',
+        `Detalles: ${getValue('contact-message') || 'No indicado'}`,
+        '',
+        'Enviado desde aireproyectospanama.com'
+      ];
+      return lines.join('\n');
     }
+    function buildWhatsAppUrl() {
+      return `${WHATSAPP_API_BASE}${new URLSearchParams({ phone: WHATSAPP_PHONE, text: buildWhatsAppMessage() }).toString()}`;
+    }
+    function updateWhatsAppFields() {
+      const textInput = document.getElementById('whatsapp-text');
+      const previewLink = document.getElementById('whatsapp-preview-link');
+      if (textInput) textInput.value = buildWhatsAppMessage();
+      if (previewLink) previewLink.href = buildWhatsAppUrl();
+    }
+    function prepareWhatsAppSubmit() { updateWhatsAppFields(); return true; }
+ 
+    document.querySelectorAll('#contact-form input, #contact-form select, #contact-form textarea')
+      .forEach((field) => { field.addEventListener('input', updateWhatsAppFields); field.addEventListener('change', updateWhatsAppFields); });
+    updateWhatsAppFields();
   </script>
 </body>
 </html>
